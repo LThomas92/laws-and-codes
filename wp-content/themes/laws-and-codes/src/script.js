@@ -6,33 +6,9 @@ let blockTriggerHeight = $(window).height() * 0.33;
 
 $( document ).ready(function() {
 
-  $('.c-podcast__audio audio').addClass('audio-player');
-  
-  $('.modal-trigger').click(function() {
-    var modal_id = $(this).data('target');
-    var video_url = $(this).data('src');
-        $('#' + modal_id + ' iframe').attr('src', video_url);
-        $('#' + modal_id).addClass('open');
+  $('.quote-btn').click(function() {
+    $('body').addClass('show-dark-bg');
   });
-  
-  $('.modal-close').click(function(e) {
-    $(this).closest('.c-featured-videos__modal').removeClass('open');
-  });
-  
-  $('.c-featured-videos__modal').click(function(e) {
-    if ($(e.target).hasClass('c-featured-videos__modal')) {
-      $(this).removeClass('open');
-    }
-  });
-
-  $(".site-header__search").click(function () {
-    $(".overlay-menu").addClass("show-overlay-menu");
-  });
-  
-  $('.close-icon').click(function() {
-    $('.overlay-menu').removeClass('show-overlay-menu');
-  });
-
 
     if ( jQuery(".gutenberg-styles > *").length &&
     !(window.location.hash != "" && jQuery(window.location.hash).length)

@@ -16,7 +16,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -27,26 +29,13 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$laws_and_codes_description = get_bloginfo( 'description', 'display' );
-			if ( $laws_and_codes_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $laws_and_codes_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+		<a href="<?php echo get_site_url(); ?>">
+		<img title="Laws & Codes Logo" class="site-header__logo" src="<?php echo get_template_directory_uri(); ?>/img/laws-codes-logo-blue.png" alt="Laws & Codes Logo"/>
+		</a>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'laws-and-codes' ); ?></button>
+			
 			<?php
 			wp_nav_menu(
 				array(
@@ -56,4 +45,11 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+
+			<button class="quote-btn">Get a quote</button>
+
 	</header><!-- #masthead -->
+
+	<div class="c-popup-modal">
+		CONTACT FORM
+	</div>
