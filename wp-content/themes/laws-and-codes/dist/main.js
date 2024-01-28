@@ -89,7 +89,13 @@ let blockTriggerHeight = $(window).height() * 0.33;
 $(document).ready(function () {
 
   $('.quote-btn').click(function () {
-    $('body').addClass('show-dark-bg');
+    $('.dark-bg').addClass('show-dark-bg');
+    $('.c-popup-modal').addClass('c-popup-modal__active');
+  });
+
+  $('.c-popup-modal__close').click(function () {
+    $('.dark-bg').removeClass('show-dark-bg');
+    $('.c-popup-modal').removeClass('c-popup-modal__active');
   });
 
   if (jQuery(".gutenberg-styles > *").length && !(window.location.hash != "" && jQuery(window.location.hash).length)) {

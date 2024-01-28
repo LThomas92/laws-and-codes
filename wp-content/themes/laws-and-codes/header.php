@@ -12,6 +12,7 @@
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
+<div class="dark-bg"></div>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,6 +51,3 @@
 
 	</header><!-- #masthead -->
 
-	<div class="c-popup-modal">
-		CONTACT FORM
-	</div>

@@ -3,7 +3,11 @@
 <div class="content">
 
     <section class="home-header">
-        
+        <div class="home-header__content">
+          <h1 class="home-header__title">We are <span>Coding Digital Legacies</span></h1>
+          <a class="home-header__cta" href="">Explore Now</a>
+        </div>
+        <div>2</div>
     </section>
 
     <section class="our-services">
@@ -41,7 +45,7 @@ endif; ?>
         <div class="c-about-us__content">
             <p class="c-about-us__heading">About Us</p>
             <h4 class="c-about-us__title">We're <span>client centric</span> Web Development Agency</h4>
-            <p><?php echo $aboutDesc; ?></p>
+            <p class="c-about-us__desc"><?php echo $aboutDesc; ?></p>
         </div>
         <div class="c-about-us__image">
             <figure>

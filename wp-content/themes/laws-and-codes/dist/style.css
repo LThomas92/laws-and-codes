@@ -29,7 +29,7 @@
       .site-header .main-navigation ul li a {
         color: #949494; }
 
-.quote-btn {
+.quote-btn, .gform_button {
   background-color: #070945;
   color: #fff;
   outline: none;
@@ -40,7 +40,135 @@
   font-size: 1.1rem; }
 
 .c-popup-modal {
-  visibility: hidden; }
+  background-color: #fff;
+  max-width: 50%;
+  margin: 0 auto;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.2), 25px 0px 20px -20px rgba(0, 0, 0, 0.2), 0px 25px 20px -20px rgba(0, 0, 0, 0.2), -25px 0px 20px -20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  opacity: 0;
+  transition: 300ms;
+  z-index: -1;
+  border-radius: 3px; }
+  @media only screen and (max-width: 1024px) {
+    .c-popup-modal {
+      max-width: 100%;
+      width: 90%;
+      flex-direction: column;
+      top: -25%; } }
+  .c-popup-modal svg {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    cursor: pointer; }
+    @media only screen and (max-width: 1024px) {
+      .c-popup-modal svg path {
+        fill: #fff; } }
+  .c-popup-modal__header {
+    background-color: #E8CCB2;
+    width: 100%;
+    height: 150px;
+    display: block;
+    padding: 2rem 2.5rem; }
+  .c-popup-modal__content {
+    color: #fff; }
+  .c-popup-modal__form {
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 2.5rem; }
+    @media only screen and (max-width: 1024px) {
+      .c-popup-modal__form {
+        padding-top: 2.5rem;
+        padding-left: 2.5rem; } }
+  .c-popup-modal__title {
+    font-family: "Sora", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #070945;
+    margin-bottom: 1.2rem; }
+  .c-popup-modal__content p {
+    font-family: "Archivo Narrow", sans-serif;
+    display: block;
+    margin-bottom: 1.5rem; }
+  .c-popup-modal__active {
+    opacity: 1;
+    z-index: 10000; }
+
+#gform_wrapper_1 legend, #gform_wrapper_1 label {
+  font-family: "Archivo Narrow", sans-serif; }
+
+.site-footer {
+  background-color: #070945;
+  padding: 4rem 0; }
+  .site-footer__logo {
+    height: 6rem; }
+  .site-footer__sm {
+    flex-basis: calc((100% / 3) - 2rem); }
+  .site-footer__desc {
+    color: #fff;
+    font-weight: 200; }
+  .site-footer__social-media-icons {
+    display: flex;
+    margin-top: 2rem; }
+  .site-footer__social-media {
+    margin-right: 1.2rem; }
+    .site-footer__social-media img {
+      height: 1.5rem; }
+  .site-footer #footer-navigation li a {
+    color: #fff; }
+
+.site-info {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100vw - calc(16px * 2));
+  max-width: 959px;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+  @media (min-width: 1440px) {
+    .site-info {
+      max-width: 1200px; } }
+  @media (max-width: 767px) {
+    .site-info {
+      width: calc(100vw - calc(16px * 2)); } }
+
+.home-header {
+  width: calc(100vw - calc(16px * 2));
+  max-width: 959px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3.5rem; }
+  @media (min-width: 1440px) {
+    .home-header {
+      max-width: 1200px; } }
+  @media (max-width: 767px) {
+    .home-header {
+      width: calc(100vw - calc(16px * 2)); } }
+  .home-header__title {
+    font-size: 2.2rem;
+    text-transform: uppercase; }
+    .home-header__title span {
+      color: #E8CCB2;
+      display: block; }
+  .home-header__cta {
+    background-color: #E8CCB2;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-top: 1.5rem; }
 
 .our-services {
   background-color: #070945;
@@ -106,6 +234,8 @@
     .c-about-us__title span {
       color: #E8CCB2;
       font-weight: 500; }
+  .c-about-us__desc {
+    color: #949494; }
   .c-about-us__content {
     flex-basis: calc((100% / 2) - 1rem); }
   .c-about-us__image {

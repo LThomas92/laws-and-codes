@@ -21,7 +21,7 @@
     }
 }
 
-.quote-btn {
+.quote-btn, .gform_button {
         background-color: $blue;
         color: $white;
         outline: none;
@@ -33,5 +33,82 @@
 }
 
 .c-popup-modal {
-    visibility: hidden;
+  background-color: $white;
+  max-width: 50%;
+  margin: 0 auto;
+  box-shadow: $box-shadow-light-black;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  opacity: 0;
+  transition: 300ms;
+  z-index: -1;
+  border-radius: 3px;
+  @media only screen and (max-width: $tablet_max) {
+    max-width: 100%;
+    width: 90%;
+    flex-direction: column;
+    top: -25%;
+  }
+  svg {
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 0.5rem;
+      margin-right: 0.5rem;
+      cursor: pointer;
+      path {
+          @media only screen and (max-width: $tablet_max) {
+              fill: $white;
+          }
+      }
+  }
+  &__header {
+    background-color: $tan;
+    width: 100%;
+    height: 150px;
+    display: block;
+    padding: 2rem 2.5rem;
+  }
+  &__content {
+    color: $white;
+  }
+  &__form {
+      padding-top: 5rem;
+      padding-left: 5rem;
+      padding-right: 2.5rem;
+      padding-bottom: 2.5rem;
+      @media only screen and (max-width: $tablet_max) {
+          padding-top: 2.5rem;
+          padding-left: 2.5rem;
+      }
+  }
+  &__title {
+    font-family: $sora;
+    font-weight: 500;
+    text-align: center;
+    color: $blue;
+    margin-bottom: 1.2rem;
+  }
+
+  &__content { 
+    p {
+      font-family: $archivo;
+      display: block;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__active {
+      opacity: 1;
+      z-index: 10000;
+  }
+}
+
+#gform_wrapper_1 {
+  legend, label {
+    font-family: $archivo;
+  }
 }
