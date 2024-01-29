@@ -39,6 +39,11 @@
   cursor: pointer;
   font-size: 1.1rem; }
 
+.search-btn {
+  height: 1.1rem;
+  margin-left: 1.5rem;
+  cursor: pointer; }
+
 .c-popup-modal {
   background-color: #fff;
   max-width: 50%;
@@ -106,7 +111,9 @@
 
 .site-footer {
   background-color: #070945;
-  padding: 4rem 0; }
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  position: relative; }
   .site-footer__logo {
     height: 6rem; }
   .site-footer__sm {
@@ -123,6 +130,39 @@
       height: 1.5rem; }
   .site-footer #footer-navigation li a {
     color: #fff; }
+  .site-footer__copyright {
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem; }
+  .site-footer__newsletter-form input[type="email"] {
+    padding: 0.4rem 0;
+    outline: none;
+    border: none;
+    border-bottom: 1.2px solid #fff;
+    background-color: transparent;
+    color: #fff; }
+  .site-footer__newsletter-form input[type="submit"] {
+    background-color: #E8CCB2;
+    color: #fff;
+    outline: none;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-family: "Archivo Narrow", sans-serif; }
+  .site-footer__newsletter-desc {
+    color: #fff;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 1.2rem; }
 
 .site-info {
   display: flex;
@@ -130,7 +170,8 @@
   width: calc(100vw - calc(16px * 2));
   max-width: 959px;
   margin-left: auto !important;
-  margin-right: auto !important; }
+  margin-right: auto !important;
+  padding-bottom: 2rem; }
   @media (min-width: 1440px) {
     .site-info {
       max-width: 1200px; } }
@@ -145,19 +186,25 @@
   margin-right: auto !important;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 3.5rem; }
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
+  position: relative;
+  z-index: 1; }
   @media (min-width: 1440px) {
     .home-header {
       max-width: 1200px; } }
   @media (max-width: 767px) {
     .home-header {
       width: calc(100vw - calc(16px * 2)); } }
+  .home-header__content {
+    flex-basis: calc((100% / 2) - 2rem); }
   .home-header__title {
-    font-size: 2.2rem;
-    text-transform: uppercase; }
+    font-size: 3rem; }
     .home-header__title span {
       color: #E8CCB2;
       display: block; }
+  .home-header__desc {
+    margin: 1.5rem 0; }
   .home-header__cta {
     background-color: #E8CCB2;
     color: #fff;
@@ -169,16 +216,67 @@
     font-size: 1.1rem;
     display: inline-block;
     margin-top: 1.5rem; }
+    .home-header__cta--nofill {
+      background-color: transparent;
+      border: 1.2px solid #E8CCB2;
+      color: #E8CCB2;
+      margin-left: 2rem; }
+  .home-header__image {
+    flex-basis: calc((100% / 2) - 2rem); }
+    .home-header__image figure {
+      position: relative;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      box-shadow: 0px 0px 34px 1px rgba(0, 0, 0, 0.75); }
+      .home-header__image figure::before {
+        content: "";
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 0;
+        padding-bottom: 66.5%; }
+      .home-header__image figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 300ms cubic-bezier(0.64, 0.04, 0.35, 1);
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0; }
+  .home-header__stats {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    z-index: 10;
+    background-color: #E8CCB2;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.2), 25px 0px 20px -20px rgba(0, 0, 0, 0.2), 0px 25px 20px -20px rgba(0, 0, 0, 0.2), -25px 0px 20px -20px rgba(0, 0, 0, 0.2); }
+    .home-header__stats ul {
+      display: flex;
+      padding: 1.5rem 2rem; }
+    .home-header__stats li {
+      margin-right: 3rem; }
+      .home-header__stats li p {
+        color: #fff; }
+    .home-header__stats-list-item-title {
+      font-size: 1.3rem;
+      text-shadow: 1px 1px 2px #070945;
+      margin-bottom: 0.5rem; }
+    .home-header__stats-list-item-num {
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 500;
+      text-shadow: 1px 1px 2px #070945; }
 
 .our-services {
   background-color: #070945;
-  padding: 2.5rem 0; }
+  padding: 6rem 0; }
   .our-services__title {
     color: #fff;
     text-align: center;
     letter-spacing: 1.4px;
     text-align: center;
-    font-weight: 500; }
+    font-weight: 300; }
   .our-services__container {
     display: flex;
     justify-content: space-between;
@@ -195,18 +293,29 @@
         width: calc(100vw - calc(16px * 2)); } }
   .our-services__service {
     text-align: center;
-    margin-right: 3.5rem; }
+    margin-right: 3.5rem;
+    position: relative; }
+    .our-services__service::after {
+      content: '';
+      position: absolute;
+      top: 30%;
+      right: 0;
+      width: 0.3px;
+      height: 65%;
+      background-color: rgba(255, 255, 255, 0.7); }
+    .our-services__service:nth-child(3)::after {
+      display: none; }
   .our-services__service-icon {
     height: 2.2rem;
     margin-bottom: 1.2rem; }
   .our-services__service-title {
     color: #fff;
     font-weight: 300;
-    margin-bottom: 2.5rem; }
+    margin-bottom: 2rem; }
   .our-services__service-desc {
-    background-color: #fff;
+    text-align: left;
     padding: 1.5rem 2.5rem;
-    border-radius: 4px; }
+    color: rgba(255, 255, 255, 0.7); }
 
 .c-about-us {
   width: calc(100vw - calc(16px * 2));
@@ -224,7 +333,7 @@
       width: calc(100vw - calc(16px * 2)); } }
   .c-about-us__heading {
     color: #E8CCB2;
-    font-weight: 500;
+    font-weight: 800;
     margin-bottom: 0.8rem;
     text-transform: uppercase; }
   .c-about-us__title {
@@ -243,7 +352,8 @@
     .c-about-us__image figure {
       position: relative;
       margin-bottom: 1rem;
-      overflow: hidden; }
+      overflow: hidden;
+      box-shadow: 0px 0px 34px 1px rgba(0, 0, 0, 0.75); }
       .c-about-us__image figure::before {
         content: "";
         position: relative;
@@ -281,7 +391,7 @@ figure {
   margin: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Sora", sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 p, a, button {
   font-family: "Archivo Narrow", sans-serif; }

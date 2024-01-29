@@ -59,10 +59,21 @@ endif;
     </div>
 
     <div class="site-footer__contact">
-      SITE FOOTER CONTACT
+      <p class="site-footer__newsletter-desc">Sign up for our newsletter. Stay tuned for any updates, promotions, & discounts!</p>
+      <div class="site-footer__newsletter-form">
+        <?php echo do_shortcode('[mc4wp_form id=80]'); ?>
+      </div>
     </div>
 			
 		</div><!-- .site-info -->
+    <div class="site-footer__meta-info">
+      <?php 
+        $copyright = get_field('footer_copyright', 'option');
+      ?>
+      <p class="site-footer__copyright">
+        <?php echo $copyright; ?>
+      </p>
+    </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

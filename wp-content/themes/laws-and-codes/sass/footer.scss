@@ -1,6 +1,8 @@
 .site-footer {
   background-color: $blue;
-  padding: 4rem 0;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  position: relative;
   &__logo {
     height: 6rem;
   }
@@ -27,10 +29,50 @@
       color: $white;
     }
   }
+  &__copyright {
+    color: rgba($white, 0.8);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  &__newsletter-form {
+    input[type="email"] {
+      padding: 0.4rem 0;
+      outline: none;
+      border: none;
+      border-bottom: 1.2px solid $white;
+      background-color: transparent;
+      color: $white;
+    }
+    input[type="submit"] {
+      background-color: $tan;
+      color: $white;
+      outline: none;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 1px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      display: inline-block;
+      margin-top: 1.5rem;
+      font-family: $archivo;
+    }
+  }
+  &__newsletter-desc {
+    color: $white;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 1.2rem;
+  }
 }
 
 .site-info {
   display: flex;
   justify-content: space-between;
   @include container-margins;
+  padding-bottom: 2rem;
 }
