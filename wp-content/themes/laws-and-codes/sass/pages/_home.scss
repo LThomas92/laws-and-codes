@@ -155,6 +155,9 @@
             width: 0.3px;
             height: 65%;
             background-color: rgba($white, 0.7);
+            @media only screen and (max-width: $tablet_max) {
+              display: none;
+            }
         }
         &:nth-child(3) {
             &::after {

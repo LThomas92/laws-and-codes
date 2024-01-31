@@ -49,33 +49,48 @@
 
 			<div class="quote-search-section">
 			<button class="quote-btn">Get a quote</button>
-			<svg class="search-btn" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#070945;}
-</style>
-<path class="st0" d="M23.8,21.6l-6.2-6.2c1.2-1.6,1.9-3.6,1.9-5.7c0-5.4-4.4-9.7-9.7-9.7C4.4,0,0,4.4,0,9.7c0,5.4,4.4,9.7,9.7,9.7
-	c2,0,3.9-0.6,5.5-1.7l6.2,6.2C21.5,24,23.8,21.6,23.8,21.6z M2.9,9.7c0-3.8,3.1-6.9,6.9-6.9s6.9,3.1,6.9,6.9s-3.1,6.9-6.9,6.9
-	C5.9,16.6,2.9,13.5,2.9,9.7z"/>
-</svg>
+			<img class="search-btn" title ="Search Icon" src="<?php echo get_template_directory_uri(); ?>/img/search.svg" alt="Search Icon">
 			</div>
 	</header><!-- #masthead -->
 
   <div class="mobile-header">
-    <a href="<?php echo site_url(); ?>">
-    <img title="Laws & Codes Logo" class="mobile-header__logo" src="<?php echo get_template_directory_uri(); ?>/img/mobile-logo.png" alt="Laws & Codes Logo"/>
-    </a>
 
     <div id="nav-icon3" class="mobile-header__menu-icon">
       <span></span>
       <span></span>
       <span></span>
     </div>
+
+	<a href="<?php echo site_url(); ?>">
+    <img title="Laws & Codes Logo" class="mobile-header__logo" src="<?php echo get_template_directory_uri(); ?>/img/mobile-logo.png" alt="Laws & Codes Logo"/>
+    </a>
+
+	<img class="search-btn" title ="Search Icon" src="<?php echo get_template_directory_uri(); ?>/img/search.svg" alt="Search Icon">
     
   </div>
 
   <div class="mobile-menu-overlay">
-    MOBILE MENU
+	<div class="mobile-menu-overlay__container">
+	<div class="mobile-menu-overlay__header">
+	<img class="mobile-menu-overlay__close-icon" src="<?php echo get_template_directory_uri(); ?>/img/close-white.svg" alt="Close Icon"/>
+
+	<a href="<?php echo site_url(); ?>">
+    <img title="Laws & Codes Logo" class="mobile-menu-overlay__logo" src="<?php echo get_template_directory_uri(); ?>/img/lc-logo-white.svg" alt="Laws & Codes Logo"/>
+    </a>
+
+	<img class="search-btn" title ="Search Icon" src="<?php echo get_template_directory_uri(); ?>/img/search-white.svg" alt="Search Icon">
+	</div>
+  <nav class="mobile-navigation">
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				)
+			);
+			?>
+		</nav><!-- #site-navigation -->
+		</div>
   </div>
 
   <div class="overlay-menu">

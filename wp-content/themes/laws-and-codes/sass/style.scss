@@ -48,7 +48,19 @@ body {
   }
 
   [aria-current="page"] {
-    color: $blue !important;
+    color: $blue;
+    @media only screen and (max-width: $tablet_max) {
+      &::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $white;
+        display: inline-block;
+        margin-right: 1.2rem;
+        vertical-align: middle;
+      }
+    }
 }
 
   .content {

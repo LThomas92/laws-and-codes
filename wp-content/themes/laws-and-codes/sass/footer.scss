@@ -12,6 +12,9 @@
   &__desc {
     color: $white;
     font-weight: 200;
+    @media only screen and (max-width: $tablet_max) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__social-media-icons {
@@ -25,6 +28,9 @@
     }
   }
   #footer-navigation {
+    @media only screen and (max-width: $tablet_max) {
+      margin-bottom: 2rem;
+    }
     li a {
       color: $white;
     }
@@ -38,6 +44,10 @@
     display: block;
     padding-top: 1.5rem;
     padding-bottom: 2rem;
+    @media only screen and (max-width: $tablet_max) {
+      left: 0;
+      margin-left: 1rem;
+    }
   }
   &__newsletter-form {
     input[type="email"] {
@@ -78,4 +88,7 @@
   justify-content: space-between;
   @include container-margins;
   padding-bottom: 2rem;
+  @media only screen and (max-width: $tablet_max) {
+    flex-direction: column;
+  }
 }

@@ -113,6 +113,11 @@ $(document).ready(function () {
 
   $('.mobile-header__menu-icon').click(function () {
     $(this).toggleClass('open');
+    $('.mobile-menu-overlay').toggleClass('mobile-menu-overlay__active');
+  });
+
+  $('.mobile-menu-overlay__close-icon').click(function () {
+    $('.mobile-menu-overlay').removeClass('mobile-menu-overlay__active');
   });
 
   $('.quote-btn').click(function () {
