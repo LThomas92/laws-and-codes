@@ -28,7 +28,7 @@
         $icon = get_sub_field('social_media_icon');
         ?>
         <li class="site-footer__social-media">
-          <a target="_blank" href="<?php echo $cta['link']; ?>">
+          <a target="_blank" href="<?php echo $cta; ?>">
             <img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt'];?>">
           </a>
         </li>

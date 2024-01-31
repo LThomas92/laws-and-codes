@@ -5,6 +5,9 @@
   padding-top: 2.5rem;
   padding-bottom: 5rem;
   position: relative;
+  @media only screen and (max-width: $tablet_max) {
+    flex-direction: column;
+  }
   z-index: 1;
   &__content {
     flex-basis: calc((100% / 2) - 2rem);
@@ -39,6 +42,9 @@
   }
   &__image {
     flex-basis: calc((100% / 2) - 2rem);
+    @media only screen and (max-width: $tablet_max) {
+      margin-top: 2rem;
+    }
     figure {
     position: relative;
     margin-bottom: 1rem;
@@ -71,12 +77,21 @@
     z-index: 10;
     background-color: $tan;
     box-shadow: $box-shadow-light-black;
+    @media only screen and (max-width: $tablet_max) {
+      position: relative;
+    }
     ul {
         display: flex;
         padding: 1.5rem 2rem;
+        @media only screen and (max-width: $tablet_max) {
+          padding: 1rem 1.5rem;
+        }
     }
     li {
         margin-right: 3rem;
+        @media only screen and (max-width: $tablet_max) {
+          margin-right: 1rem;
+        }
         p {
             color: $white;
         }
@@ -85,12 +100,18 @@
         font-size: 1.3rem;
         text-shadow: 1px 1px 2px $blue;
         margin-bottom: 0.5rem;
+        @media only screen and (max-width: $tablet_max) {
+          font-size: 1rem;
+        }
     }
     &-list-item-num {
         text-align: center;
         font-size: 1.1rem;
         font-weight: 500;
         text-shadow: 1px 1px 2px $blue;
+        @media only screen and (max-width: $tablet_max) {
+          font-size: 0.8rem;
+        }
     }
 }
 }
@@ -98,6 +119,9 @@
 .our-services {
     background-color: $blue;
     padding: 6rem 0;
+    @media only screen and (max-width: $tablet_max) {
+      padding: 3rem 0;
+    }
     &__title {
         color: $white;
         text-align: center;
@@ -110,11 +134,19 @@
         justify-content: space-between;
         margin: 5rem 0;
         @include container-margins;
+        @media only screen and (max-width: $tablet_max) {
+          flex-direction: column;
+          margin: 2.5rem 0;
+        }
     }
     &__service {
         text-align: center;
         margin-right: 3.5rem;
         position: relative;
+        @media only screen and (max-width: $tablet_max) {
+          margin-right: 0;
+          margin-bottom: 2.5rem;
+        }
         &::after {
             content: '';
             position: absolute;
@@ -151,6 +183,9 @@
     margin: 2.5rem 0;
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: $tablet_max) {
+      flex-direction: column;
+    }
     &__heading {
         color: $tan;
         font-weight: 800;
@@ -174,6 +209,9 @@
     }
     &__image {
         flex-basis: calc((100% / 2) - 1rem);
+        @media only screen and (max-width: $tablet_max) {
+          margin-top: 3rem;
+        }
         figure {
             position: relative;
             margin-bottom: 1rem;

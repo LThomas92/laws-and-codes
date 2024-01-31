@@ -59,6 +59,36 @@
 	C5.9,16.6,2.9,13.5,2.9,9.7z"/>
 </svg>
 			</div>
-
 	</header><!-- #masthead -->
+
+  <div class="mobile-header">
+    <a href="<?php echo site_url(); ?>">
+    <img title="Laws & Codes Logo" class="mobile-header__logo" src="<?php echo get_template_directory_uri(); ?>/img/mobile-logo.png" alt="Laws & Codes Logo"/>
+    </a>
+
+    <div id="nav-icon3" class="mobile-header__menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+  </div>
+
+  <div class="mobile-menu-overlay">
+    MOBILE MENU
+  </div>
+
+  <div class="overlay-menu">
+<img class="close-icon" src="<?php echo get_template_directory_uri(); ?>/img/close.svg" alt="Close Icon"/>
+  <div class="container-margins">
+<div class="header-search-form">
+    <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+  <label>
+      <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'What are you looking for?', 'placeholder' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+  </label>
+  <button type="submit" name="submit" value="submit"></button>
+</form>
+    </div> <!-- header search form -->
+    </div> <!-- container margins -->
+</div> <!-- overlay menu -->
 

@@ -46,7 +46,7 @@
                     "label": "Social Media CTA",
                     "name": "social_media_cta",
                     "aria-label": "",
-                    "type": "link",
+                    "type": "url",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -55,7 +55,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
+                    "default_value": "",
+                    "placeholder": "",
                     "parent_repeater": "field_65b6b2c81fe91"
                 },
                 {
@@ -179,5 +180,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1706539537
+    "modified": 1706587370
 }

@@ -28,10 +28,23 @@ counters.forEach( counter => {
    animate();
 });
 
+//Mobile Menu 
+
+$('.mobile-header__menu-icon').click(function() {
+  $(this).toggleClass('open');
+});
 
   $('.quote-btn').click(function() {
     $('.dark-bg').addClass('show-dark-bg');
     $('.c-popup-modal').addClass('c-popup-modal__active');
+  });
+
+  $('.search-btn').click(function() {
+    $(".overlay-menu").addClass("show-overlay-menu");
+  });
+
+  $(".close-icon").click(function () {
+    $(".overlay-menu").removeClass("show-overlay-menu");
   });
 
   $('.c-popup-modal__close').click(function(){
