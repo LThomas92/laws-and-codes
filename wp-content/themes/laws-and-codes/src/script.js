@@ -57,6 +57,23 @@ $('.mobile-menu-overlay__close-icon').click(function() {
     $('.c-popup-modal').removeClass('c-popup-modal__active');
   });
 
+
+  //Pages - ABOUT 
+
+  $('.c-about-page__image-slides').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    slidesPerRow: 1,
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    fade: true,
+    fadeSpeed: 5000
+  });
+
+
+
     if ( jQuery(".gutenberg-styles > *").length &&
     !(window.location.hash != "" && jQuery(window.location.hash).length)
   ) {

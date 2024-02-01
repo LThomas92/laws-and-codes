@@ -1,0 +1,94 @@
+.c-about-page {
+    @include container-margins;
+    &__header {
+        margin-top: 6rem;
+        margin-bottom: 3.5rem;
+    }
+    &__small-title {
+        text-align: center;
+        font-family: $poppins;
+        text-transform: uppercase;
+        color: $light-grey;
+        margin-bottom: 2rem;
+    }
+    &__title {
+        font-family: $poppins;
+        font-size: 4rem;
+        font-weight: 300;
+        span {
+            color: $tan;
+            font-weight: 400;
+        }
+    }
+    &__image-slides {
+        .slick-dots {
+            display: flex !important;
+            justify-content: center;
+            margin: 0;
+            padding: 1rem 0;
+            list-style-type: none;
+            position: absolute;
+            bottom: -4.5rem; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            li {
+                margin: 0 0.25rem;
+            }
+
+            button {
+                display: block;
+                width: 1rem;
+                height: 1rem;
+                padding: 0;
+                border: none;
+                border-radius: 100%;
+                background-color: $blue;
+                border: 1px solid $blue;
+                text-indent: -9999px;
+                cursor: pointer;
+              }
+            
+              li.slick-active button {
+                background-color: $tan;
+              }
+        }
+    }
+    &__image-slide {
+        figure {
+            position: relative;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            &::before {
+            content: "";
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 0;
+            padding-bottom: 50%;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                object-fit: cover;
+                transition: .3s cubic-bezier(.64,.04,.35,1);
+                &:hover {
+                    transform: scale(1.05);
+                  }
+            }
+        }
+    }
+    &__description {
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+    }
+    &__description-title {
+        font-size: 2.2rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+        color: $blue;
+    }
+}
