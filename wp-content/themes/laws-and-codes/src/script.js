@@ -73,7 +73,6 @@ $('.mobile-menu-overlay__close-icon').click(function() {
   });
 
 
-
     if ( jQuery(".gutenberg-styles > *").length &&
     !(window.location.hash != "" && jQuery(window.location.hash).length)
   ) {
