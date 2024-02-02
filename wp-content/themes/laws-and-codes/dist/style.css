@@ -771,6 +771,33 @@
         display: inline-block;
         margin-right: 2rem;
         vertical-align: middle; }
+  .c-single-project__image {
+    width: 100vw;
+    margin-bottom: 3.5rem; }
+    .c-single-project__image figure {
+      position: relative;
+      margin-bottom: 1rem;
+      overflow: hidden; }
+      .c-single-project__image figure::before {
+        content: "";
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%; }
+        @media only screen and (max-width: 1024px) {
+          .c-single-project__image figure::before {
+            padding-bottom: 100%; } }
+      .c-single-project__image figure img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        transition: 0.3s cubic-bezier(0.64, 0.04, 0.35, 1); }
+        .c-single-project__image figure img:hover {
+          transform: scale(1.05); }
 
 body {
   position: relative;

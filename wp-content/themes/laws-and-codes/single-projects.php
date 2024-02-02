@@ -49,14 +49,14 @@ endif; ?>
     </div>
 
     <section class="c-single-project__site-images">
-    <?php if( have_rows('repeater_field_name') ): ?>
+    <?php if( have_rows('site_images') ): ?>
 
     <ul class="c-single-project__images">
-    <?php while( have_rows('site_iamges') ) : the_row(); ?>
+    <?php while( have_rows('site_images') ) : the_row(); ?>
         <?php 
-            $image = get_field('site_image');
+            $image = get_sub_field('site_image');
         ?>
-        <li class="c-single-project__site-image">
+        <li class="c-single-project__image">
             <figure>
                 <img title="<?php echo $image['title']; ?>" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
             </figure>
