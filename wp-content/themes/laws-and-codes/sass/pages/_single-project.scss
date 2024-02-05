@@ -6,6 +6,9 @@
     &__title {
         font-size: 6rem;
         font-weight: 500;
+        @media only screen and (max-width: $tablet_max) {
+            font-size: 3.5rem;
+        }
         span {
             font-weight: 300;
             font-style: italic;
@@ -16,6 +19,9 @@
         text-align: right;
         position: relative;
         margin-top: 7.5rem;
+        @media only screen and (max-width: $tablet_max) {
+            margin-top: 4rem;
+        }
     &::before {
         content: '';
         background-color: $blue;
@@ -26,18 +32,29 @@
         position: absolute;
         top: 50%;
         left: 0;
+        @media only screen and (max-width: $tablet_max) {
+            width: 75%;
+        }
         }
     }
     &__details {
         display: flex;
         justify-content: space-between;
         margin-top: 4.5rem;
-        margin-bottom: 7rem;
+        margin-bottom: 3.5rem;
+        @media only screen and (max-width: $tablet_max) {
+            margin-top: 3rem;
+            flex-direction: column;
+        }
     }
     &__details-title {
         flex-basis: calc((100% / 2) - 2rem);
     }
     &__details-list {
+        @media only screen and (max-width: $tablet_max) {
+            margin-top: 2.5rem;
+            text-align: left;
+        }
         li {
             font-family: $poppins;
             color: $dark-grey;
@@ -69,6 +86,9 @@
             font-family: $poppins;
             font-size: 0.9rem;
             margin-bottom: 1.2rem;
+            @media only screen and (max-width: $tablet_max) {
+                margin-bottom: 2.5rem;
+            }
             &::before {
                 content: '';
                 background-color: $blue;
@@ -78,15 +98,28 @@
                 display: inline-block;
                 margin-right: 2rem;
                 vertical-align: middle;
+                @media only screen and (max-width: $tablet_max) {
+                    margin-right: 1rem;
+                }
             }
         }
     }
-    &__image {
+    &__site-images {
+        background-color: $blue;
         width: 100vw;
+        position: relative;
+        left: calc(50% - 50vw);
+        padding: 8rem 3.5rem;
         margin-bottom: 3.5rem;
+        @media only screen and (max-width: $tablet_max) {
+            padding: 4rem 2rem;
+        }
+    }
+    &__image {
+        margin-right: 1.5rem;
+        border: 1.5px solid $dark-grey;
         figure {
             position: relative;
-            margin-bottom: 1rem;
             overflow: hidden;
             &::before {
             content: "";
@@ -94,10 +127,7 @@
             display: block;
             width: 100%;
             height: 0;
-            padding-bottom: 100%;
-            @media only screen and (max-width: $tablet_max) {
-                padding-bottom: 100%;
-            }
+            padding-bottom: 62%;
             }
             img {
                 width: 100%;
@@ -106,10 +136,7 @@
                 left: 0;
                 top: 0;
                 object-fit: cover;
-                transition: .3s cubic-bezier(.64,.04,.35,1);
-                &:hover {
-                    transform: scale(1.05);
-                  }
+                display: block;
             }
         }
     }

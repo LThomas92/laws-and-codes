@@ -74,15 +74,26 @@ $('.mobile-menu-overlay__close-icon').click(function() {
 
   // Pages - Single Project 
   $('.c-single-project__images').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    slidesPerRow: 1,
-    dots: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    infinite: true,
     arrows: false,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    fade: true,
-    fadeSpeed: 5000
+    responsive: [{ 
+      // tablet 
+      breakpoint: 991, 
+      settings: { 
+      slidesToShow: 1,
+      slidesToScroll: 1
+      }}, 
+      { 
+      // mobile portrait
+      breakpoint: 479,
+      settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+      }
+      }
+      ]
   });
 
     if ( jQuery(".gutenberg-styles > *").length &&

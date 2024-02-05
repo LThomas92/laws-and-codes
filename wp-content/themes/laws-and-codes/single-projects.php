@@ -16,12 +16,13 @@
             <?php 
                 $date = get_field('date');
                 $link = get_field('website_link');
-
+                $cat = get_the_category();
+                $catName = $cat[0]->cat_name;
             ?>
 
             <ul class="c-single-project__details-list">
                 <li>Date: <span><?php echo $date; ?></span></li>
-                <li>Category: </li>
+                <li>Category: <span> <?php echo $catName;?> </span></li>
                 <li>Client: <span><?php echo get_the_title(); ?></span></li>
                 <li>Website: <span><a target="_blank" href="<?php echo $link; ?>"><?php echo $link; ?></span></a></li>
             </ul>
