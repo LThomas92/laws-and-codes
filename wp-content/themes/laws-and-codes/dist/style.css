@@ -823,6 +823,15 @@
   .c-single-project__meta-info {
     flex-basis: calc((100% / 2) - 2rem);
     text-align: right; }
+  .c-single-project__social-media-icons {
+    display: flex;
+    justify-content: end; }
+  .c-single-project__social-media-icon {
+    margin-top: 0.75rem;
+    margin-right: 1rem; }
+    .c-single-project__social-media-icon img {
+      height: 1.8rem;
+      display: block; }
   .c-single-project__fun-facts-title {
     font-family: "Poppins", sans-serif;
     font-weight: 500;

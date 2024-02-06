@@ -73,6 +73,18 @@
         flex-basis: calc((100% / 2) - 2rem);
         text-align: right;
     }
+    &__social-media-icons {
+      display: flex;
+      justify-content: end;
+    }
+    &__social-media-icon {
+      margin-top: 0.75rem;
+      margin-right: 1rem;
+      img {
+        height: 1.8rem;
+        display: block;
+      }
+    }
     &__fun-facts-title {
         font-family: $poppins;
         font-weight: 500;
