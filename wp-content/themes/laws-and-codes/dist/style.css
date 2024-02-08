@@ -695,6 +695,18 @@
     margin-bottom: 1.5rem;
     color: #070945; }
 
+.c-page-services {
+  width: calc(100vw - calc(16px * 2));
+  max-width: 959px;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+  @media (min-width: 1440px) {
+    .c-page-services {
+      max-width: 1200px; } }
+  @media (max-width: 767px) {
+    .c-page-services {
+      width: calc(100vw - calc(16px * 2)); } }
+
 .c-our-work {
   width: calc(100vw - calc(16px * 2));
   max-width: 959px;
