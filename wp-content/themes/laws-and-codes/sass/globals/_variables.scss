@@ -26,7 +26,7 @@ $poppins: 'Poppins', sans-serif;
   $content_widescreen_margins: 32px;
   $content_widescreen_max_width: 750px;
 
-  //Box Shadow $white
+  //Box Shadow 
   $box-shadow-light-black: 0px -25px 20px -20px rgba(0,0,0,0.2),
   25px 0px 20px -20px rgba(0,0,0,0.2),
   0px 25px 20px -20px rgba(0,0,0,0.2),
@@ -38,6 +38,10 @@ $poppins: 'Poppins', sans-serif;
   -25px 0px 20px -20px rgba(0,0,0,0.15);
 
   $box-shadow-light-black--3: 0px 0px 34px 1px rgba(0,0,0,0.75);
+
+  $box-shadow-bottom-only-black: 0 4px 2px -2px rgba($black, 0.75);
+
+  $box-shadow-bottom-only-grey: 0 4px 2px -2px rgba($dark-grey, 0.75);
 
   $box-shadow-white: 0px -25px 20px -20px $white,
   25px 0px 20px -20px $white,
