@@ -34,7 +34,7 @@
             </ul>
         </div>
 
-        <section class="c-page-services__overview">
+        <section class="c-page-services__overview gutenberg-styles">
             <?php 
                 $overviewImage = get_field('overview_image');
                 $overViewTitle = get_field('overview_title');
@@ -55,7 +55,76 @@
         </section>
 
         <section class="c-page-services__service-section">
-            SERVICES SECTION
+          <?php 
+            $serviceHeaderDesc = get_field('service_header_desc'); 
+            ?>
+  
+          <h2 class="c-page-services__service-big-title">Our Services</h2>
+          <p class="c-page-services__service-small-desc"><?php echo $serviceHeaderDesc; ?></p>
+        <?php if( have_rows('services_list') ): ?>
+        <ul class="c-page-services__services">
+    <?php while( have_rows('services_list') ) : the_row();
+        $serviceIcon = get_sub_field('service_icon'); 
+        $serviceTitle = get_sub_field('service_title');
+        $serviceDesc = get_sub_field('service_desc');
+        ?>
+       <li class="c-page-services__service-item">
+          <img src="<?php echo $serviceIcon['url']; ?>" alt="<?php echo $serviceIcon['alt']; ?>">
+          <h4 class="c-page-services__service-title"><?php echo $serviceTitle; ?></h4>
+          <p class="c-page-services__service-desc"><?php echo $serviceDesc; ?></p>
+       </li>
+
+   <?php endwhile; ?>
+    </ul>
+
+<?php else :
+    // Do something...
+endif; ?>
+        </section>
+
+        <section class="c-page-services__process-section gutenberg-styles">
+          <?php 
+            $processTitle = get_field('process_title');
+            $processDesc = get_field('process_desc');
+          ?>
+          <div class="c-page-services__process-header">
+            <h4><?php echo $processTitle; ?></h4>
+            <p><?php echo $processDesc; ?></p>
+          </div>
+
+          <?php if( have_rows('process_list') ): ?>
+        <ul class="c-page-services__process-list">
+   <?php while( have_rows('process_list') ) : the_row(); ?>
+        <?php $image = get_sub_field('image'); 
+              $number = get_sub_field('number');
+              $title = get_sub_field('title');
+              $desc = get_sub_field('description')
+        ?>
+            <li class="c-page-services__process-item">
+              <div class="c-page-services__process-item-image">
+
+              <div class="c-page-services__process-item-number">
+                <?php echo $number; ?>
+              </div>
+              <figure>
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
+              </figure>
+
+              </div>
+
+              <div class="c-page-services__process-item-content">
+                <h4 class="c-page-services__process-item-title"><?php echo $title; ?></h4>
+                <p class="c-page-services__process-item-desc"><?php echo $desc; ?></p>
+              </div>
+
+          </li>
+    <?php endwhile;  ?>
+    </ul>
+
+<?php 
+else :
+endif; ?>
+
         </section>
 
 
