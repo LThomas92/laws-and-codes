@@ -1,0 +1,199 @@
+.c-page-pricing {
+    @include container-margins;
+    &__header {
+        margin-top: 4rem;
+        margin-bottom: 8rem;
+        h1 {
+            text-align: center;
+            font-family: $poppins;
+            text-transform: uppercase;
+            color: $blue;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+    }
+    &__why-section {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4.5rem;
+        @media only screen and (max-width: $tablet_max) {
+            flex-direction: column;
+        }
+    }
+    &__why-content {
+        width: 35%;
+        @media only screen and (max-width: $tablet_max) {
+            width: 100%;
+            margin-bottom: 3rem;
+          }
+        h5 {
+            text-transform: uppercase;
+            color: $blue;
+            margin-bottom: 0.3rem;
+        }
+        h3 {
+            font-size: 2.1rem;
+            font-weight: 500;
+            color: $tan;
+            margin-bottom: 2.2rem;
+        }
+    }
+
+    &__company-mission, &__company-vision {
+        h4 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: $blue;
+            margin-bottom: 0.8rem;
+        }
+        p {
+            margin-bottom: 2rem;
+            color: $dark-grey;
+        }
+    }
+
+    &__learn-cta {
+        background-color: $blue;
+        color: $white;
+        padding: 1rem 2rem;
+        display: inline-block;
+        margin-top: 1.6rem;
+        transition: all 300ms ease-in;
+        cursor: pointer;
+        &:hover {
+            background-color: rgba($blue, 0.8);
+        }
+    }
+
+    &__highlights {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-basis: calc((100% / 2) - 1rem);
+    }
+    &__highlight {
+        flex-basis: 48%;
+        background-color: $blue;
+        padding-top: 2.5rem;
+        padding-bottom: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-bottom: 1.5rem;
+        box-shadow: $box-shadow-light-black--2;
+        @media only screen and (max-width: $mobile-max) {
+            flex-basis: 100%;
+          }
+        img {
+            height: 1.5rem;
+            display: block;
+            margin-bottom: 1.5rem;
+        }
+        h4 {
+            color: $white;
+            font-weight: 500;
+            margin-bottom: 1.4rem;
+        }
+        p {
+            color: $light-grey;
+        }
+    }
+
+
+    //PRICING PACKAGES
+    &__package-section {
+        background-color: $offWhite;
+        width: 100vw;
+        position: relative;
+        left: calc((50% - 50vw));
+        padding: 4rem 0;
+    }
+
+    &__package-header {
+        text-align: center;
+        margin-bottom: 2rem;
+        h5 {
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            color: $blue;
+        }
+        h2 {
+            color: $black;
+            font-size: 2.2rem;
+            font-weight: 500;
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__packages {
+        display: flex;
+        justify-content: space-between;
+        @include container-margins;
+        @media only screen and (max-width: $tablet-max) {
+            flex-direction: column;
+          }
+    }
+
+   &__package {
+        background-color: $blue;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        flex-basis: calc((100% / 3) - 1rem);
+        box-shadow: $box-shadow-light-black;
+        transition: all 300ms ease-in;
+        @media only screen and (max-width: $tablet-max) {
+            margin-bottom: 3rem;
+            flex-basis: 100%;
+          }
+        &:hover {
+            box-shadow: 0px 4px 60px 30px rgba($tan, 0.7);
+            z-index: 1;
+        }
+
+        h5 {
+            color: $tan;
+            text-transform: uppercase;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        h3 {
+            color: $white;
+            font-weight: 500;
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+            span {
+                font-size: 0.8rem;
+                margin-right: 0.4rem;
+            }
+        }
+   }
+
+   &__package-features {
+        margin-top: 2.2rem;
+   }
+
+   &__package-feature {
+        color: $white;
+        font-family: $archivo;
+        font-size: 1rem;
+        padding-bottom: 1.1rem;
+
+        &::before {
+            content: '';
+            background-image: url('../img/icons/check-icon.svg');
+            background-size: 15px 15px;
+            background-repeat: no-repeat;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
+   }
+
+
+
+}

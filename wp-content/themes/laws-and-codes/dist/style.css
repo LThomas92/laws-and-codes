@@ -1008,6 +1008,176 @@
     margin-top: 0.75rem;
     position: relative; }
 
+.c-page-pricing {
+  width: calc(100vw - calc(16px * 2));
+  max-width: 959px;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+  @media (min-width: 1440px) {
+    .c-page-pricing {
+      max-width: 1200px; } }
+  @media (max-width: 767px) {
+    .c-page-pricing {
+      width: calc(100vw - calc(16px * 2)); } }
+  .c-page-pricing__header {
+    margin-top: 4rem;
+    margin-bottom: 8rem; }
+    .c-page-pricing__header h1 {
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      text-transform: uppercase;
+      color: #070945;
+      margin-bottom: 2rem;
+      font-size: 0.9rem; }
+  .c-page-pricing__why-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.5rem; }
+    @media only screen and (max-width: 1024px) {
+      .c-page-pricing__why-section {
+        flex-direction: column; } }
+  .c-page-pricing__why-content {
+    width: 35%; }
+    @media only screen and (max-width: 1024px) {
+      .c-page-pricing__why-content {
+        width: 100%;
+        margin-bottom: 3rem; } }
+    .c-page-pricing__why-content h5 {
+      text-transform: uppercase;
+      color: #070945;
+      margin-bottom: 0.3rem; }
+    .c-page-pricing__why-content h3 {
+      font-size: 2.1rem;
+      font-weight: 500;
+      color: #E8CCB2;
+      margin-bottom: 2.2rem; }
+  .c-page-pricing__company-mission h4, .c-page-pricing__company-vision h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #070945;
+    margin-bottom: 0.8rem; }
+  .c-page-pricing__company-mission p, .c-page-pricing__company-vision p {
+    margin-bottom: 2rem;
+    color: #949494; }
+  .c-page-pricing__learn-cta {
+    background-color: #070945;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: inline-block;
+    margin-top: 1.6rem;
+    transition: all 300ms ease-in;
+    cursor: pointer; }
+    .c-page-pricing__learn-cta:hover {
+      background-color: rgba(7, 9, 69, 0.8); }
+  .c-page-pricing__highlights {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: calc((100% / 2) - 1rem); }
+  .c-page-pricing__highlight {
+    flex-basis: 48%;
+    background-color: #070945;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.15), 25px 0px 20px -20px rgba(0, 0, 0, 0.15), 0px 25px 20px -20px rgba(0, 0, 0, 0.15), -25px 0px 20px -20px rgba(0, 0, 0, 0.15); }
+    @media only screen and (max-width: 767px) {
+      .c-page-pricing__highlight {
+        flex-basis: 100%; } }
+    .c-page-pricing__highlight img {
+      height: 1.5rem;
+      display: block;
+      margin-bottom: 1.5rem; }
+    .c-page-pricing__highlight h4 {
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 1.4rem; }
+    .c-page-pricing__highlight p {
+      color: #d3d3d3; }
+  .c-page-pricing__package-section {
+    background-color: #f9f9f9;
+    width: 100vw;
+    position: relative;
+    left: calc((50% - 50vw));
+    padding: 4rem 0; }
+  .c-page-pricing__package-header {
+    text-align: center;
+    margin-bottom: 2rem; }
+    .c-page-pricing__package-header h5 {
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      color: #070945; }
+    .c-page-pricing__package-header h2 {
+      color: #000;
+      font-size: 2.2rem;
+      font-weight: 500;
+      margin-bottom: 5rem; }
+  .c-page-pricing__packages {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100vw - calc(16px * 2));
+    max-width: 959px;
+    margin-left: auto !important;
+    margin-right: auto !important; }
+    @media (min-width: 1440px) {
+      .c-page-pricing__packages {
+        max-width: 1200px; } }
+    @media (max-width: 767px) {
+      .c-page-pricing__packages {
+        width: calc(100vw - calc(16px * 2)); } }
+    @media only screen and (max-width: 1024px) {
+      .c-page-pricing__packages {
+        flex-direction: column; } }
+  .c-page-pricing__package {
+    background-color: #070945;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    flex-basis: calc((100% / 3) - 1rem);
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.2), 25px 0px 20px -20px rgba(0, 0, 0, 0.2), 0px 25px 20px -20px rgba(0, 0, 0, 0.2), -25px 0px 20px -20px rgba(0, 0, 0, 0.2);
+    transition: all 300ms ease-in; }
+    @media only screen and (max-width: 1024px) {
+      .c-page-pricing__package {
+        margin-bottom: 3rem;
+        flex-basis: 100%; } }
+    .c-page-pricing__package:hover {
+      box-shadow: 0px 4px 60px 30px rgba(232, 204, 178, 0.7);
+      z-index: 1; }
+    .c-page-pricing__package h5 {
+      color: #E8CCB2;
+      text-transform: uppercase;
+      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+      font-weight: 400; }
+    .c-page-pricing__package h3 {
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.8rem;
+      margin-bottom: 1.2rem; }
+      .c-page-pricing__package h3 span {
+        font-size: 0.8rem;
+        margin-right: 0.4rem; }
+  .c-page-pricing__package-features {
+    margin-top: 2.2rem; }
+  .c-page-pricing__package-feature {
+    color: #fff;
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 1rem;
+    padding-bottom: 1.1rem; }
+    .c-page-pricing__package-feature::before {
+      content: '';
+      background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4Ny42IDg3LjYiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6ICNlOGNjYjI7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTQzLjgsMEMxOS42LDAsMCwxOS42LDAsNDMuOHMxOS42LDQzLjgsNDMuOCw0My44LDQzLjgtMTkuNiw0My44LTQzLjhTNjgsMCw0My44LDBabTE2LDI5LjdjNC4xLS4xLDYuMiw0LjksMy4zLDcuOGwtMjEuMiwyMS4yYy0xLjMsMS4zLTMuNSwxLjMtNC44LDBsLTEwLjctMTAuOWMtNC40LTQuMywyLjEtMTAuOCw2LjQtNi40bDYsNmMuNCwuNCwxLjIsLjQsMS42LDBsMTYuNC0xNi40Yy43LS44LDEuOC0xLjMsMy0xLjNoMFoiLz4KPC9zdmc+);
+      background-size: 15px 15px;
+      background-repeat: no-repeat;
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px; }
+
 .c-single-project {
   width: calc(100vw - calc(16px * 2));
   max-width: 959px;
