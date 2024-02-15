@@ -760,15 +760,24 @@
     text-align: center; }
     .c-page-services__stats-list-item img {
       height: 5rem; }
+      @media only screen and (max-width: 1024px) {
+        .c-page-services__stats-list-item img {
+          height: 3rem; } }
     .c-page-services__stats-list-item h5 {
       color: #fff;
       font-size: 1.1rem;
       font-weight: 400; }
+      @media only screen and (max-width: 1024px) {
+        .c-page-services__stats-list-item h5 {
+          font-size: 0.7rem; } }
     .c-page-services__stats-list-item p {
       font-size: 1.4rem;
       font-weight: 400;
       color: #fff;
       margin-top: 0.5rem; }
+      @media only screen and (max-width: 1024px) {
+        .c-page-services__stats-list-item p {
+          font-size: 1rem; } }
   .c-page-services__overview {
     display: flex;
     justify-content: space-between;
@@ -824,11 +833,12 @@
     .c-page-services__overview-desc p {
       margin-bottom: 1.5rem; }
   .c-page-services__service-section {
-    background-color: rgba(232, 204, 178, 0.75);
+    background-color: rgba(249, 249, 249, 0.75);
     width: 100vw;
     position: relative;
     left: calc(50% - 50vw);
-    padding: 1.5rem 1.9rem; }
+    padding: 1.5rem 1.9rem;
+    box-shadow: 0 4px 2px -2px rgba(148, 148, 148, 0.75); }
     @media only screen and (max-width: 1024px) {
       .c-page-services__service-section {
         padding: 4rem 1.5rem; } }
