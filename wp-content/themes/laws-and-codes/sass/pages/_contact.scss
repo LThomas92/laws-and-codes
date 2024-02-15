@@ -1,0 +1,107 @@
+.c-page-contact-us {
+    margin-top: 10rem;
+    @include container-margins;
+    @media only screen and (max-width: $tablet_max) {
+        margin-top: 1rem;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+        @media only screen and (max-width: $tablet_max) {
+            flex-direction: column;
+        }
+    }
+
+    &__text {
+        width: 40%;
+        @media only screen and (max-width: $tablet_max) {
+            width: 100%;
+        }
+        h1 {
+            font-family: $poppins;
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: $blue;
+            display: block;
+            margin-top: 15rem;
+            @media only screen and (max-width: $tablet_max) {
+                margin-top: 3rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+
+    &__form {
+        box-shadow: $box-shadow-light-black;
+        width: 55%;
+        @media only screen and (max-width: $tablet_max) {
+            width: 100%;
+        }
+        form {
+            background-color: $blue;
+            padding: 3rem 4.5rem;
+            @media only screen and (max-width: $tablet_max) {
+                padding: 1.5rem 2rem;
+            }
+        }
+        .gfield_label, label {
+            font-family: $poppins;
+            font-size: 1.2rem;
+            font-weight: 400 !important;
+            color: $white;
+        }
+        .gfield_radio {
+            margin-top: 1.5rem;
+            margin-bottom: 3.5rem;
+        }
+        .gchoice {
+            text-transform: uppercase;
+            font-family: $archivo;
+            margin-bottom: 0.8rem;
+        }
+        .gform-field-label {
+            padding-left: 1.2rem;
+        }
+        input[type="text"] {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 0.8px solid $white;
+            color: $white;
+            display: block;
+            margin-bottom: 1.5rem !important;
+        }
+        textarea {
+            font-family: $poppins;
+        }
+
+        .gform_drop_instructions, .gform_fileupload_rules {
+            color: $white;
+            font-family: $poppins !important;
+        }
+
+        .gform_button_select_files {
+            background-color: $white !important;
+            color: $blue !important;
+            font-family: $poppins;
+            font-weight: 500 !important;
+            border: none;
+            outline: none;
+            padding: 0.8rem 1.2rem;
+            width: 50% !important;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 0.8rem;
+        }
+
+        .gform_button {
+            background-color: $white !important;
+            color: $blue !important;
+            font-weight: 500 !important;
+        }
+        .gform_footer {
+            margin-top: 3.5rem !important;
+        }
+    }
+}

@@ -572,7 +572,7 @@
   .c-about-us__desc {
     color: #949494; }
   .c-about-us__content {
-    flex-basis: calc((100% / 2) - 1rem); }
+    flex-basis: calc((100% / 2) - 5rem); }
   .c-about-us__image {
     flex-basis: calc((100% / 2) - 1rem); }
     @media only screen and (max-width: 1024px) {
@@ -1187,6 +1187,199 @@
       display: inline-block;
       vertical-align: middle;
       margin-right: 15px; }
+
+.c-page-faqs {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  width: calc(100vw - calc(16px * 2));
+  max-width: 959px;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+  @media (min-width: 1440px) {
+    .c-page-faqs {
+      max-width: 1200px; } }
+  @media (max-width: 767px) {
+    .c-page-faqs {
+      width: calc(100vw - calc(16px * 2)); } }
+  .c-page-faqs__header {
+    text-align: center;
+    margin-bottom: 7rem; }
+    .c-page-faqs__header h1 {
+      font-weight: 500;
+      margin-bottom: 1rem; }
+    .c-page-faqs__header p {
+      color: #949494; }
+  .c-page-faqs__content {
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (max-width: 767px) {
+      .c-page-faqs__content {
+        flex-direction: column; } }
+  .c-page-faqs__accordion-content {
+    flex-basis: calc((100% / 2) - 2rem); }
+  .c-page-faqs__accordion {
+    margin-bottom: 2.5rem; }
+  .c-page-faqs__accordion-title {
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    position: relative; }
+    .c-page-faqs__accordion-title:hover {
+      color: #E8CCB2; }
+      .c-page-faqs__accordion-title:hover svg path {
+        fill: #E8CCB2; }
+    .c-page-faqs__accordion-title svg {
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      vertical-align: middle;
+      position: absolute;
+      right: 0; }
+  .c-page-faqs__active-title {
+    color: #E8CCB2; }
+    .c-page-faqs__active-title svg {
+      transform: rotate(90deg); }
+      .c-page-faqs__active-title svg path {
+        fill: #E8CCB2; }
+  .c-page-faqs__wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.4); }
+    .c-page-faqs__wrapper.is-open {
+      grid-template-rows: 1fr; }
+  .c-page-faqs__accordion-content-box {
+    margin-bottom: 1.5rem;
+    overflow: hidden; }
+    .c-page-faqs__accordion-content-box p {
+      color: #949494; }
+  .c-page-faqs .active-content {
+    max-height: 100%;
+    transition: max-height 300ms ease-in; }
+    @media only screen and (max-width: 767px) {
+      .c-page-faqs .active-content {
+        max-height: 100%; } }
+  .c-page-faqs__image {
+    flex-basis: calc((100% / 2) - 5rem);
+    position: relative;
+    margin-bottom: 1rem;
+    overflow: hidden; }
+    .c-page-faqs__image::before {
+      content: "";
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 0;
+      padding-bottom: 80%; }
+      @media only screen and (max-width: 1024px) {
+        .c-page-faqs__image::before {
+          padding-bottom: 100%; } }
+    .c-page-faqs__image img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      object-fit: cover;
+      transition: 0.3s cubic-bezier(0.64, 0.04, 0.35, 1); }
+      .c-page-faqs__image img:hover {
+        transform: scale(1.05); }
+
+.c-page-contact-us {
+  margin-top: 10rem;
+  width: calc(100vw - calc(16px * 2));
+  max-width: 959px;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+  @media (min-width: 1440px) {
+    .c-page-contact-us {
+      max-width: 1200px; } }
+  @media (max-width: 767px) {
+    .c-page-contact-us {
+      width: calc(100vw - calc(16px * 2)); } }
+  @media only screen and (max-width: 1024px) {
+    .c-page-contact-us {
+      margin-top: 1rem; } }
+  .c-page-contact-us__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem; }
+    @media only screen and (max-width: 1024px) {
+      .c-page-contact-us__content {
+        flex-direction: column; } }
+  .c-page-contact-us__text {
+    width: 40%; }
+    @media only screen and (max-width: 1024px) {
+      .c-page-contact-us__text {
+        width: 100%; } }
+    .c-page-contact-us__text h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: #070945;
+      display: block;
+      margin-top: 15rem; }
+      @media only screen and (max-width: 1024px) {
+        .c-page-contact-us__text h1 {
+          margin-top: 3rem;
+          margin-bottom: 2.5rem; } }
+  .c-page-contact-us__form {
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.2), 25px 0px 20px -20px rgba(0, 0, 0, 0.2), 0px 25px 20px -20px rgba(0, 0, 0, 0.2), -25px 0px 20px -20px rgba(0, 0, 0, 0.2);
+    width: 55%; }
+    @media only screen and (max-width: 1024px) {
+      .c-page-contact-us__form {
+        width: 100%; } }
+    .c-page-contact-us__form form {
+      background-color: #070945;
+      padding: 3rem 4.5rem; }
+      @media only screen and (max-width: 1024px) {
+        .c-page-contact-us__form form {
+          padding: 1.5rem 2rem; } }
+    .c-page-contact-us__form .gfield_label, .c-page-contact-us__form label {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.2rem;
+      font-weight: 400 !important;
+      color: #fff; }
+    .c-page-contact-us__form .gfield_radio {
+      margin-top: 1.5rem;
+      margin-bottom: 3.5rem; }
+    .c-page-contact-us__form .gchoice {
+      text-transform: uppercase;
+      font-family: "Archivo Narrow", sans-serif;
+      margin-bottom: 0.8rem; }
+    .c-page-contact-us__form .gform-field-label {
+      padding-left: 1.2rem; }
+    .c-page-contact-us__form input[type="text"] {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 0.8px solid #fff;
+      color: #fff;
+      display: block;
+      margin-bottom: 1.5rem !important; }
+    .c-page-contact-us__form textarea {
+      font-family: "Poppins", sans-serif; }
+    .c-page-contact-us__form .gform_drop_instructions, .c-page-contact-us__form .gform_fileupload_rules {
+      color: #fff;
+      font-family: "Poppins", sans-serif !important; }
+    .c-page-contact-us__form .gform_button_select_files {
+      background-color: #fff !important;
+      color: #070945 !important;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500 !important;
+      border: none;
+      outline: none;
+      padding: 0.8rem 1.2rem;
+      width: 50% !important;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 0.8rem; }
+    .c-page-contact-us__form .gform_button {
+      background-color: #fff !important;
+      color: #070945 !important;
+      font-weight: 500 !important; }
+    .c-page-contact-us__form .gform_footer {
+      margin-top: 3.5rem !important; }
 
 .c-single-project {
   width: calc(100vw - calc(16px * 2));

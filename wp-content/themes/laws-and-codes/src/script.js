@@ -96,6 +96,24 @@ $('.mobile-menu-overlay__close-icon').click(function() {
       ]
   });
 
+
+  //FAQs PAGE
+
+  $('.c-page-faqs__accordion-title').click(function() {
+    $('.c-page-faqs__accordion-title').removeClass('c-page-faqs__active-title');
+    var termTitle = $(this).attr('key');
+    $(this).toggleClass('c-page-faqs__active-title').siblings().removeClass('c-page-faqs__active-title');
+    
+    $('.c-page-faqs__wrapper').each(function() {
+      if(termTitle !== $(this).attr('key')) {
+        $(this).removeClass('is-open');
+      } else {
+        $(this).addClass('is-open');
+      }
+    });
+  });
+
+
     if ( jQuery(".gutenberg-styles > *").length &&
     !(window.location.hash != "" && jQuery(window.location.hash).length)
   ) {
