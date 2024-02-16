@@ -1234,7 +1234,8 @@
       display: inline-block;
       vertical-align: middle;
       position: absolute;
-      right: 0; }
+      right: 0;
+      transition: 300ms; }
   .c-page-faqs__active-title {
     color: #E8CCB2; }
     .c-page-faqs__active-title svg {
