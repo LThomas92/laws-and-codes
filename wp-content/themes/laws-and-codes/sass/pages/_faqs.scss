@@ -32,7 +32,9 @@
     font-weight: 400;
     margin-bottom: 0.5rem;
     cursor: pointer;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     &:hover {
         color: $tan;
         svg {
@@ -44,10 +46,6 @@
     svg {
         width: 25px;
         height: 25px;
-        display: inline-block;
-        vertical-align: middle;
-        position: absolute;
-        right: 0;
         transition: 300ms;
     }
 }
@@ -93,6 +91,7 @@
     position: relative;
     margin-bottom: 1rem;
     overflow: hidden;
+    box-shadow: $box-shadow-light-black--2;
     &::before {
     content: "";
     position: relative;

@@ -1223,7 +1223,9 @@
     font-weight: 400;
     margin-bottom: 0.5rem;
     cursor: pointer;
-    position: relative; }
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
     .c-page-faqs__accordion-title:hover {
       color: #E8CCB2; }
       .c-page-faqs__accordion-title:hover svg path {
@@ -1231,10 +1233,6 @@
     .c-page-faqs__accordion-title svg {
       width: 25px;
       height: 25px;
-      display: inline-block;
-      vertical-align: middle;
-      position: absolute;
-      right: 0;
       transition: 300ms; }
   .c-page-faqs__active-title {
     color: #E8CCB2; }
@@ -1264,7 +1262,8 @@
     flex-basis: calc((100% / 2) - 5rem);
     position: relative;
     margin-bottom: 1rem;
-    overflow: hidden; }
+    overflow: hidden;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.15), 25px 0px 20px -20px rgba(0, 0, 0, 0.15), 0px 25px 20px -20px rgba(0, 0, 0, 0.15), -25px 0px 20px -20px rgba(0, 0, 0, 0.15); }
     .c-page-faqs__image::before {
       content: "";
       position: relative;
