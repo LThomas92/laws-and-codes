@@ -143,6 +143,8 @@
         text-align: center;
         margin-right: 3.5rem;
         position: relative;
+        flex-basis: calc((100% / 3) - 2rem);
+        align-self: stretch;
         @media only screen and (max-width: $tablet_max) {
           margin-right: 0;
           margin-bottom: 2.5rem;

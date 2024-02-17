@@ -96,6 +96,20 @@ $('.mobile-menu-overlay__close-icon').click(function() {
       ]
   });
 
+  //PRICING PAGE
+  $('.c-page-pricing__company-value-title').click(function() {
+    var valuesTitle = $(this).attr('key');
+    $(this).toggleClass('c-page-pricing__company-active-title').siblings().removeClass('c-page-pricing__company-active-title');
+
+    $('.c-page-pricing__wrapper').each(function() {
+      if($(this).attr('key') == valuesTitle) {
+        $(this).toggleClass('is-open').siblings().removeClass('is-open');
+      }
+    });
+
+
+  });
+
 
   //FAQs PAGE
 

@@ -21,7 +21,7 @@
         }
     }
     &__why-content {
-        width: 35%;
+      flex-basis: calc((100% / 3) - 1rem);
         @media only screen and (max-width: $tablet_max) {
             width: 100%;
             margin-bottom: 3rem;
@@ -39,7 +39,7 @@
         }
     }
 
-    &__company-mission, &__company-vision {
+    &__company-mission, &__company-values-section {
         h4 {
             font-size: 1.5rem;
             font-weight: 500;
@@ -49,7 +49,73 @@
         p {
             margin-bottom: 2rem;
             color: $dark-grey;
+            letter-spacing: 0.1px;
+            line-height: 20px;
         }
+    }
+
+    &__company-values-title {
+      margin-bottom: 2rem !important;
+    }
+
+    &__company-value {
+      margin-bottom: 1.5rem;
+      h4 {
+        font-weight: 400;
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+          color: $tan;
+          svg {
+              path {
+                  fill: $tan;
+              }
+          }
+      }
+        svg {
+            width: 25px;
+            height: 25px;
+            transition: 300ms;
+          path {
+            fill: $blue;
+          }
+        }
+      }
+      div {
+        font-family: $archivo;
+      }
+    }
+
+    &__company-active-title {
+      color: $tan !important;
+      svg {
+          transform: rotate(90deg);
+          path {
+              fill: $tan !important;
+          }
+      }
+    }
+
+    &__wrapper {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.5s ease-out;
+      border-bottom: 1px solid rgba($light-grey, 0.4);
+      &.is-open {
+          grid-template-rows: 1fr;
+      }
+    }
+
+    &__company-value-content {
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      p {
+          color: $dark-grey;
+      }
     }
 
     &__learn-cta {
@@ -70,6 +136,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         flex-basis: calc((100% / 2) - 1rem);
+        align-content: flex-start;
     }
     &__highlight {
         flex-basis: 48%;
@@ -80,6 +147,7 @@
         padding-right: 2rem;
         margin-bottom: 1.5rem;
         box-shadow: $box-shadow-light-black--2;
+
         @media only screen and (max-width: $mobile-max) {
             flex-basis: 100%;
           }
@@ -149,6 +217,12 @@
         &:hover {
             box-shadow: 0px 4px 60px 30px rgba($tan, 0.7);
             z-index: 1;
+        }
+
+        img {
+          height: 2rem;
+          margin-top: 1rem;
+          margin-bottom: 1.2rem;
         }
 
         h5 {

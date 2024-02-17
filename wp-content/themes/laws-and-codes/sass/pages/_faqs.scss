@@ -78,14 +78,6 @@
     }
 }
 
-    .active-content {
-        max-height: 100%;
-        transition: max-height 300ms ease-in;
-        @media only screen and (max-width: $mobile_max) {
-            max-height: 100%;
-        }
-    }
-
 &__image {
     flex-basis: calc((100% / 2) - 5rem);
     position: relative;

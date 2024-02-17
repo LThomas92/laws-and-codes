@@ -170,10 +170,10 @@
         },
         {
             "key": "field_65cce4ce06e6d",
-            "label": "Company Vision Desc",
-            "name": "company_vision_desc",
+            "label": "Company Values",
+            "name": "company_values",
             "aria-label": "",
-            "type": "textarea",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -182,11 +182,57 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "rows": "",
-            "placeholder": "",
-            "new_lines": ""
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Value",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_65d0d5a7ea5e0",
+                    "label": "Company Value Title",
+                    "name": "company_value_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_65cce4ce06e6d"
+                },
+                {
+                    "key": "field_65d0d5c9ea5e1",
+                    "label": "Company Value Description",
+                    "name": "company_value_description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_65cce4ce06e6d"
+                }
+            ]
         },
         {
             "key": "field_65cced72752e3",
@@ -352,6 +398,7 @@
                     "collapsed": "",
                     "button_label": "Add Feature",
                     "rows_per_page": 20,
+                    "parent_repeater": "field_65ccfd205a60f",
                     "sub_fields": [
                         {
                             "key": "field_65cd0960d5f0f",
@@ -374,8 +421,7 @@
                             "append": "",
                             "parent_repeater": "field_65cd0957d5f0e"
                         }
-                    ],
-                    "parent_repeater": "field_65ccfd205a60f"
+                    ]
                 }
             ]
         }
@@ -398,5 +444,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1707936116
+    "modified": 1708185063
 }

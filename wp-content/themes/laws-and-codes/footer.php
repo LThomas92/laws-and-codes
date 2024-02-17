@@ -18,7 +18,7 @@
       <a href="<?php echo get_site_url(); ?>">
       <img class="site-footer__logo" src="<?php echo get_template_directory_uri(); ?>/img/laws-codes-logo.png"" alt="Laws & Codes logo">
       </a>
-      <p class="site-footer__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet impedit, unde optio laudantium asperiores rerum dolor quasi minima, dignissimos, ullam laborum maxime modi expedita! Porro aspernatur ipsa eligendi accusantium magnam?</p>
+      <p class="site-footer__desc">We transform visions into immersive online experiences, ensuring your brand stands out in the ever-evolving digital landscape.</p>
       <?php if( have_rows('social_media_icons', 'option') ): ?>
 
    <ul class="site-footer__social-media-icons">

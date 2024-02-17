@@ -510,7 +510,9 @@
   .our-services__service {
     text-align: center;
     margin-right: 3.5rem;
-    position: relative; }
+    position: relative;
+    flex-basis: calc((100% / 3) - 2rem);
+    align-self: stretch; }
     @media only screen and (max-width: 1024px) {
       .our-services__service {
         margin-right: 0;
@@ -694,6 +696,8 @@
     font-weight: 400;
     margin-bottom: 1.5rem;
     color: #070945; }
+  .c-about-page__content p {
+    margin-bottom: 1.5rem; }
 
 .c-page-services {
   width: calc(100vw - calc(16px * 2));
@@ -1047,7 +1051,7 @@
       .c-page-pricing__why-section {
         flex-direction: column; } }
   .c-page-pricing__why-content {
-    width: 35%; }
+    flex-basis: calc((100% / 3) - 1rem); }
     @media only screen and (max-width: 1024px) {
       .c-page-pricing__why-content {
         width: 100%;
@@ -1061,14 +1065,58 @@
       font-weight: 500;
       color: #E8CCB2;
       margin-bottom: 2.2rem; }
-  .c-page-pricing__company-mission h4, .c-page-pricing__company-vision h4 {
+  .c-page-pricing__company-mission h4, .c-page-pricing__company-values-section h4 {
     font-size: 1.5rem;
     font-weight: 500;
     color: #070945;
     margin-bottom: 0.8rem; }
-  .c-page-pricing__company-mission p, .c-page-pricing__company-vision p {
+  .c-page-pricing__company-mission p, .c-page-pricing__company-values-section p {
     margin-bottom: 2rem;
-    color: #949494; }
+    color: #949494;
+    letter-spacing: 0.1px;
+    line-height: 20px; }
+  .c-page-pricing__company-values-title {
+    margin-bottom: 2rem !important; }
+  .c-page-pricing__company-value {
+    margin-bottom: 1.5rem; }
+    .c-page-pricing__company-value h4 {
+      font-weight: 400;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer; }
+      .c-page-pricing__company-value h4:hover {
+        color: #E8CCB2; }
+        .c-page-pricing__company-value h4:hover svg path {
+          fill: #E8CCB2; }
+      .c-page-pricing__company-value h4 svg {
+        width: 25px;
+        height: 25px;
+        transition: 300ms; }
+        .c-page-pricing__company-value h4 svg path {
+          fill: #070945; }
+    .c-page-pricing__company-value div {
+      font-family: "Archivo Narrow", sans-serif; }
+  .c-page-pricing__company-active-title {
+    color: #E8CCB2 !important; }
+    .c-page-pricing__company-active-title svg {
+      transform: rotate(90deg); }
+      .c-page-pricing__company-active-title svg path {
+        fill: #E8CCB2 !important; }
+  .c-page-pricing__wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.4); }
+    .c-page-pricing__wrapper.is-open {
+      grid-template-rows: 1fr; }
+  .c-page-pricing__company-value-content {
+    margin-bottom: 1.5rem;
+    overflow: hidden; }
+    .c-page-pricing__company-value-content p {
+      color: #949494; }
   .c-page-pricing__learn-cta {
     background-color: #070945;
     color: #fff;
@@ -1083,7 +1131,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-basis: calc((100% / 2) - 1rem); }
+    flex-basis: calc((100% / 2) - 1rem);
+    align-content: flex-start; }
   .c-page-pricing__highlight {
     flex-basis: 48%;
     background-color: #070945;
@@ -1156,6 +1205,10 @@
     .c-page-pricing__package:hover {
       box-shadow: 0px 4px 60px 30px rgba(232, 204, 178, 0.7);
       z-index: 1; }
+    .c-page-pricing__package img {
+      height: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1.2rem; }
     .c-page-pricing__package h5 {
       color: #E8CCB2;
       text-transform: uppercase;
@@ -1252,12 +1305,6 @@
     overflow: hidden; }
     .c-page-faqs__accordion-content-box p {
       color: #949494; }
-  .c-page-faqs .active-content {
-    max-height: 100%;
-    transition: max-height 300ms ease-in; }
-    @media only screen and (max-width: 767px) {
-      .c-page-faqs .active-content {
-        max-height: 100%; } }
   .c-page-faqs__image {
     flex-basis: calc((100% / 2) - 5rem);
     position: relative;
