@@ -57,7 +57,7 @@ body {
   }
 
   [aria-current="page"] {
-    color: $blue;
+    color: $blue !important;
     @media only screen and (max-width: $tablet_max) {
       &::before {
         content: '';

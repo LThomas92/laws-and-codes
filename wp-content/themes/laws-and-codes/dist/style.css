@@ -1598,7 +1598,7 @@ a {
   text-decoration: none; }
 
 [aria-current="page"] {
-  color: #070945; }
+  color: #070945 !important; }
   @media only screen and (max-width: 1024px) {
     [aria-current="page"]::before {
       content: '';
