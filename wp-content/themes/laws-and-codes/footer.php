@@ -8,8 +8,25 @@
  *
  * @package laws-and-codes
  */
-
 ?>
+
+  <div class="footer-newsletter">
+    <div class="footer-newsletter__main-content">
+      <?php $newsletterImage = get_field('footer_newsletter_image', 'option'); ?>
+    <div class="footer-newsletter__image">
+      <img src="<?php echo $newsletterImage['url']; ?>" alt="<?php echo $newsletterImage['alt']; ?>">
+    </div>
+
+    <div class="footer-newsletter__content">
+      <h3>Sign up for our newsletter. Stay tuned for any <span>updates, promotions, & discounts!</span></h3>
+    
+    <div class="footer-newsletter__form">
+    <?php echo do_shortcode('[mc4wp_form id=80]'); ?>
+    </div>
+
+    </div>
+    </div>
+  </div>
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
@@ -58,20 +75,14 @@ endif;
 		</nav><!-- #site-navigation -->
     </div>
 
-    <div class="site-footer__contact">
-      <p class="site-footer__newsletter-desc">Sign up for our newsletter. Stay tuned for any updates, promotions, & discounts!</p>
-      <div class="site-footer__newsletter-form">
-        <?php echo do_shortcode('[mc4wp_form id=80]'); ?>
-      </div>
-    </div>
-			
+    
 		</div><!-- .site-info -->
     <div class="site-footer__meta-info">
       <?php 
         $copyright = get_field('footer_copyright', 'option');
       ?>
       <p class="site-footer__copyright">
-        <?php echo $copyright; ?>
+        <?php echo $copyright; ?>.<span>All Rights Reserved</span>
       </p>
     </div>
 	</footer><!-- #colophon -->

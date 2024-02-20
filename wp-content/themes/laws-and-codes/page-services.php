@@ -29,7 +29,7 @@
                 <li class="c-page-services__stats-list-item">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/icons/handshake-icon.svg" alt="Handshake Icon">
                     <h5>Client Satisfaction</h5>
-                    <p>100</p>
+                    <p>100%</p>
                 </li>
             </ul>
         </div>

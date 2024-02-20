@@ -60,8 +60,8 @@
     flex-direction: column;
   }
   svg {
-      width: 2rem;
-      height: 2rem;
+      width: 1.5rem;
+      height: 1.5rem;
       position: absolute;
       top: 0;
       right: 0;
@@ -69,23 +69,21 @@
       margin-right: 0.5rem;
       cursor: pointer;
       path {
-          @media only screen and (max-width: $tablet_max) {
               fill: $white;
-          }
       }
   }
   &__header {
-    background-color: $tan;
+    background-color: $blue;
     width: 100%;
-    height: 150px;
+    height: 175px;
     display: block;
-    padding: 2rem 2.5rem;
+    padding: 3.5rem 2.5rem;
   }
   &__content {
     color: $white;
   }
   &__form {
-      padding-top: 5rem;
+      padding-top: 2.5rem;
       padding-left: 5rem;
       padding-right: 2.5rem;
       padding-bottom: 2.5rem;
@@ -98,7 +96,7 @@
     font-family: $sora;
     font-weight: 500;
     text-align: center;
-    color: $blue;
+    color: $white;
     margin-bottom: 1.2rem;
   }
 
@@ -169,6 +167,7 @@
   border: none;
   outline: none;
   line-height: 2rem;
+  font-family: $archivo;
 }
 
 .search-icon {
@@ -183,7 +182,7 @@
   height: 2rem;
   cursor: pointer;
   margin-top: 1.5rem;
-  margin-right: 4.5rem;
+  margin-right: 2rem;
   position: absolute;
   right: 0;
   @media only screen and (max-width: $tablet_max) {
@@ -305,4 +304,13 @@
       }
     }
   }
+}
+
+.current_page_item {
+  a {
+    color: $tan !important;
+  &::before {
+    display: none;
+  }
+}
 }

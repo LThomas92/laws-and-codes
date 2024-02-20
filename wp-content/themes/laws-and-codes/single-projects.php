@@ -21,9 +21,9 @@
             ?>
 
             <ul class="c-single-project__details-list">
-                <li>Date: <span><?php echo $date; ?></span></li>
-                <li>Category: <span> <?php echo $catName;?> </span></li>
-                <li>Client: <span><?php echo get_the_title(); ?></span></li>
+                <li>Date:<span><?php echo $date; ?></span></li>
+                <li>Category:<span><?php echo $catName;?> </span></li>
+                <li>Client:<span><?php echo get_the_title(); ?></span></li>
                 <li>Website: <span><a target="_blank" href="<?php echo $link; ?>"><?php echo $link; ?></span></a></li>
             </ul>
 

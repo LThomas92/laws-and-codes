@@ -66,27 +66,26 @@
       width: 90%;
       flex-direction: column; } }
   .c-popup-modal svg {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     position: absolute;
     top: 0;
     right: 0;
     margin-top: 0.5rem;
     margin-right: 0.5rem;
     cursor: pointer; }
-    @media only screen and (max-width: 1024px) {
-      .c-popup-modal svg path {
-        fill: #fff; } }
+    .c-popup-modal svg path {
+      fill: #fff; }
   .c-popup-modal__header {
-    background-color: #E8CCB2;
+    background-color: #070945;
     width: 100%;
-    height: 150px;
+    height: 175px;
     display: block;
-    padding: 2rem 2.5rem; }
+    padding: 3.5rem 2.5rem; }
   .c-popup-modal__content {
     color: #fff; }
   .c-popup-modal__form {
-    padding-top: 5rem;
+    padding-top: 2.5rem;
     padding-left: 5rem;
     padding-right: 2.5rem;
     padding-bottom: 2.5rem; }
@@ -98,7 +97,7 @@
     font-family: "Sora", sans-serif;
     font-weight: 500;
     text-align: center;
-    color: #070945;
+    color: #fff;
     margin-bottom: 1.2rem; }
   .c-popup-modal__content p {
     font-family: "Archivo Narrow", sans-serif;
@@ -152,7 +151,8 @@
   width: 100%;
   border: none;
   outline: none;
-  line-height: 2rem; }
+  line-height: 2rem;
+  font-family: "Archivo Narrow", sans-serif; }
 
 .search-icon {
   height: 1.2rem;
@@ -165,7 +165,7 @@
   height: 2rem;
   cursor: pointer;
   margin-top: 1.5rem;
-  margin-right: 4.5rem;
+  margin-right: 2rem;
   position: absolute;
   right: 0; }
   @media only screen and (max-width: 1024px) {
@@ -284,6 +284,11 @@
     display: block;
     margin-bottom: 1.2rem; }
 
+.current_page_item a {
+  color: #E8CCB2 !important; }
+  .current_page_item a::before {
+    display: none; }
+
 .site-footer {
   background-color: #070945;
   padding-top: 4rem;
@@ -318,7 +323,7 @@
     bottom: 0;
     left: 50%;
     display: block;
-    padding-top: 1.5rem;
+    padding-top: 2.5rem;
     padding-bottom: 2rem; }
     @media only screen and (max-width: 1024px) {
       .site-footer__copyright {
@@ -349,6 +354,52 @@
     font-style: italic;
     margin-bottom: 1.2rem; }
 
+.footer-newsletter {
+  background-color: #000;
+  padding: 6rem 3.5rem; }
+  .footer-newsletter__main-content {
+    width: calc(100vw - calc(16px * 2));
+    max-width: 959px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: flex; }
+    @media (min-width: 1440px) {
+      .footer-newsletter__main-content {
+        max-width: 1200px; } }
+    @media (max-width: 767px) {
+      .footer-newsletter__main-content {
+        width: calc(100vw - calc(16px * 2)); } }
+  .footer-newsletter h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 1.5rem; }
+    .footer-newsletter h3 span {
+      color: #E8CCB2; }
+  .footer-newsletter__image {
+    margin-right: 8rem; }
+    .footer-newsletter__image img {
+      width: 100%;
+      height: 6rem;
+      display: block; }
+  .footer-newsletter input[type="email"] {
+    margin-right: 2.5rem;
+    padding: 0.5rem 0.8rem;
+    border: none;
+    outline: none;
+    border-bottom: 1.2px solid #fff; }
+  .footer-newsletter input[type="submit"] {
+    background-color: #E8CCB2;
+    color: #000;
+    border: none;
+    outline: none;
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer; }
+  .footer-newsletter .mc4wp-form-fields {
+    display: flex; }
+
 .site-info {
   display: flex;
   justify-content: space-between;
@@ -366,6 +417,9 @@
   @media only screen and (max-width: 1024px) {
     .site-info {
       flex-direction: column; } }
+
+.mc4wp-response {
+  font-family: "Archivo Narrow", sans-serif; }
 
 .home-header {
   width: calc(100vw - calc(16px * 2));
@@ -974,7 +1028,9 @@
     margin-bottom: 3rem; }
   .c-our-work__title {
     font-family: "Poppins", sans-serif;
-    color: #E8CCB2; }
+    color: #E8CCB2;
+    text-align: center;
+    margin-top: 6.5rem; }
     .c-our-work__title span {
       font-weight: 300;
       font-style: italic;
@@ -1171,8 +1227,12 @@
     .c-page-pricing__package-header h2 {
       color: #000;
       font-size: 2.2rem;
-      font-weight: 500;
+      font-weight: 400;
       margin-bottom: 5rem; }
+      @media only screen and (max-width: 1024px) {
+        .c-page-pricing__package-header h2 {
+          font-size: 1.8rem;
+          padding: 0 2rem; } }
   .c-page-pricing__packages {
     display: flex;
     justify-content: space-between;
@@ -1427,6 +1487,117 @@
       font-weight: 500 !important; }
     .c-page-contact-us__form .gform_footer {
       margin-top: 3.5rem !important; }
+    .c-page-contact-us__form .gform_confirmation_message {
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      color: #070945;
+      padding: 8rem 2.5rem;
+      margin-top: 2rem;
+      position: relative; }
+      .c-page-contact-us__form .gform_confirmation_message::before {
+        content: '';
+        background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4Ny42IDg3LjYiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6ICNlOGNjYjI7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTQzLjgsMEMxOS42LDAsMCwxOS42LDAsNDMuOHMxOS42LDQzLjgsNDMuOCw0My44LDQzLjgtMTkuNiw0My44LTQzLjhTNjgsMCw0My44LDBabTE2LDI5LjdjNC4xLS4xLDYuMiw0LjksMy4zLDcuOGwtMjEuMiwyMS4yYy0xLjMsMS4zLTMuNSwxLjMtNC44LDBsLTEwLjctMTAuOWMtNC40LTQuMywyLjEtMTAuOCw2LjQtNi40bDYsNmMuNCwuNCwxLjIsLjQsMS42LDBsMTYuNC0xNi40Yy43LS44LDEuOC0xLjMsMy0xLjNoMFoiLz4KPC9zdmc+);
+        background-size: 30px 30px;
+        width: 30px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        top: 25%;
+        left: 50%; }
+
+.c-search-results .page-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-top: 6rem;
+  margin-bottom: 2.5rem; }
+
+.c-search-results__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem; }
+  @media only screen and (max-width: 1024px) {
+    .c-search-results__list {
+      flex-direction: column; } }
+
+.c-search-results__list-item {
+  flex-basis: calc((100% / 3) - 1rem); }
+  @media only screen and (max-width: 1024px) {
+    .c-search-results__list-item {
+      flex-basis: 100%; } }
+  .c-search-results__list-item a {
+    color: #070945; }
+  .c-search-results__list-item figure {
+    position: relative;
+    margin-bottom: 0.5rem;
+    overflow: hidden; }
+    .c-search-results__list-item figure::before {
+      content: "";
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 0;
+      padding-bottom: 80%; }
+    .c-search-results__list-item figure img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      object-fit: cover;
+      transition: 300ms cubic-bezier(0.64, 0.04, 0.35, 1);
+      display: block; }
+      .c-search-results__list-item figure img:hover {
+        transform: scale(1.05); }
+
+.c-search-results__list-item-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; }
+
+.c-page-privacy-policy {
+  width: calc(100vw - calc(16px * 2));
+  max-width: 959px;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+  @media (min-width: 1440px) {
+    .c-page-privacy-policy {
+      max-width: 1200px; } }
+  @media (max-width: 767px) {
+    .c-page-privacy-policy {
+      width: calc(100vw - calc(16px * 2)); } }
+  .c-page-privacy-policy h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    color: #070945; }
+    .c-page-privacy-policy h2::before {
+      content: '';
+      background-color: #E8CCB2;
+      background-size: 10px 10px;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 0.8rem; }
+  .c-page-privacy-policy p {
+    margin-bottom: 2rem;
+    color: #949494; }
+  .c-page-privacy-policy__title {
+    font-weight: 500;
+    text-align: center;
+    margin: 4rem 0; }
+    .c-page-privacy-policy__title h1 {
+      font-weight: 500; }
+  .c-page-privacy-policy__date {
+    font-style: italic; }
+    .c-page-privacy-policy__date span {
+      margin-right: 0.2rem; }
+  .c-page-privacy-policy__content {
+    margin-top: 8rem; }
+    @media only screen and (max-width: 1024px) {
+      .c-page-privacy-policy__content {
+        margin-top: 4rem; } }
 
 .c-single-project {
   width: calc(100vw - calc(16px * 2));

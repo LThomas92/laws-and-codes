@@ -20,98 +20,6 @@
             "endpoint": 0
         },
         {
-            "key": "field_65cce2da2852c",
-            "label": "Pricing Highlights",
-            "name": "pricing_highlights",
-            "aria-label": "",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "table",
-            "pagination": 0,
-            "min": 0,
-            "max": 0,
-            "collapsed": "",
-            "button_label": "Add Highlight",
-            "rows_per_page": 20,
-            "sub_fields": [
-                {
-                    "key": "field_65cce30d2852d",
-                    "label": "Icon",
-                    "name": "icon",
-                    "aria-label": "",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "preview_size": "medium",
-                    "parent_repeater": "field_65cce2da2852c"
-                },
-                {
-                    "key": "field_65cce31b2852e",
-                    "label": "Pricing Highlight Title",
-                    "name": "pricing_highlight_title",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_65cce2da2852c"
-                },
-                {
-                    "key": "field_65cce3372852f",
-                    "label": "Pricing Highlight Description",
-                    "name": "pricing_highlight_description",
-                    "aria-label": "",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "placeholder": "",
-                    "new_lines": "",
-                    "parent_repeater": "field_65cce2da2852c"
-                }
-            ]
-        },
-        {
             "key": "field_65ccf3ef2e745",
             "label": "Why Section",
             "name": "",
@@ -310,32 +218,6 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_65ccfd315a610",
-                    "label": "Icon",
-                    "name": "icon",
-                    "aria-label": "",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "preview_size": "medium",
-                    "parent_repeater": "field_65ccfd205a60f"
-                },
-                {
                     "key": "field_65ccfe59e67e9",
                     "label": "Title",
                     "name": "title",
@@ -444,5 +326,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1708185063
+    "modified": 1708446752
 }

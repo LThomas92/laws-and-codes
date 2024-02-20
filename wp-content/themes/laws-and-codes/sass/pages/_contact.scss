@@ -103,5 +103,24 @@
         .gform_footer {
             margin-top: 3.5rem !important;
         }
+        .gform_confirmation_message {
+            text-align: center;
+            font-family: $poppins;
+            color: $blue;
+            padding: 8rem 2.5rem;
+            margin-top: 2rem;
+            position: relative;
+            &::before {
+                content: '';
+                background-image: url('../img/icons/check-icon.svg');
+                background-size: 30px 30px;
+                width: 30px;
+                height: 30px;
+                display: block;
+                position: absolute;
+                top: 25%;
+                left: 50%;
+            }
+        }
     }
 }
