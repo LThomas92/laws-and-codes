@@ -10,7 +10,7 @@
             <h5 class="c-page-services__header-title"><?php echo get_the_title(); ?></h5>
             <h1 class="c-page-services__title"><?php echo $headerTitle; ?></h1>
             <p class="c-page-services__sub-title"><?php echo $subTitle; ?></p>
-            <button class="c-page-services__quote-cta">Get a quote</button>
+            <button class="c-page-services__quote-cta quote-btn">Get a quote</button>
         </div>
 
 
