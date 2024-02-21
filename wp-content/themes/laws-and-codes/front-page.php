@@ -27,20 +27,23 @@
     <ul class="home-header__stats-list">
 
         <li class="home-header__stats-list-item">
+        <img class="home-header__stats-list-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/person-working.svg" alt="Person Working Icon">
             <p class="home-header__stats-list-item-title">Years of Experience</p>
-            <p akhi="6" class="value home-header__stats-list-item-num">0</p>
+            <p class="home-header__stats-list-item-num">6</p>
         </li>
 
 
         <li class="home-header__stats-list-item">
+            <img class="home-header__stats-list-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/computer-icon.svg" alt="Computer Icon">
             <p class="home-header__stats-list-item-title">Digital Legacies Started</p>
-            <p akhi="14" class="value home-header__stats-list-item-num">0</p>
+            <p class="home-header__stats-list-item-num">14</p>
         </li>
 
 
         <li class="home-header__stats-list-item">
+        <img class="home-header__stats-list-item-icon" src="<?php echo get_template_directory_uri(); ?>/img/icons/handshake-icon.svg" alt="Handshake Icon">
             <p class="home-header__stats-list-item-title">Client Satisfaction</p>
-            <p akhi="100" class="value home-header__stats-list-item-num">0</p>
+            <p class="home-header__stats-list-item-num">100%</p>
         </li>
 
     </ul>

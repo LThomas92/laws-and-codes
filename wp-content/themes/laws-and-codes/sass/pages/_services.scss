@@ -139,12 +139,10 @@
         }
     }
     &__service-section {
-        // background-color: rgba($offWhite, 0.75);
-        background-color: rgba($tan, 0.1);
+        background-color: rgba($light-grey, 0.1);
         width: 100vw;
         position: relative;
         left: calc(50% - 50vw);
-        box-shadow: $box-shadow-bottom-only-grey;
         padding-top: 3.5rem;
         @media only screen and (max-width: $tablet_max) {
           padding-top: 1.5rem;
@@ -161,6 +159,11 @@
       text-align: center;
       margin-top: 0.8rem;
       margin-bottom: 3rem;
+      font-size: 1.1rem;
+      @media only screen and (max-width: $tablet_max) {
+        font-size: 0.9rem;
+        padding: 0 3rem;
+      }
     }
     &__services {
       display: flex;
@@ -200,13 +203,18 @@
       text-align: center;
       margin-bottom: 5rem;
       h4 {
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 1.2px;
         color: $blue;
-        font-size: 2rem;
-        font-weight: 500;
-        margin-bottom: 1.5rem;
       }
       p {
-        font-size: 1.2rem;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        @media only screen and (max-width: $tablet_max) {
+          font-size: 0.9rem;
+        }
       }
     }
     &__process-item {
@@ -216,6 +224,11 @@
       @media only screen and (max-width: $tablet_max) {
         flex-direction: column;
         margin-bottom: 10rem;
+      }
+      &:last-child {
+        @media only screen and (max-width: $tablet_max) {
+        margin-bottom: 4rem;
+        }
       }
       &:nth-child(even) {
         .c-page-services__process-item-image {
@@ -282,6 +295,7 @@
       font-family: $poppins;
       font-weight: 400;
       font-size: 1.8rem;
+      color: $blue;
     }
 
     &__process-item-desc {
@@ -292,5 +306,4 @@
     &__process-item-content {
       flex-basis: calc((100% / 2) - 2rem);
     }
-
       }
