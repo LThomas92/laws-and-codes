@@ -19,7 +19,7 @@
 
 	<meta property="og:title" content="Laws & Codes" />
 	<meta property="og:type" content="image/jpeg" />
-	<meta property="og:url" content="https://www.lawsandcodes.com/" />
+	<meta property="og:url" content="https://www.lawscodes.com/" />
 	<meta property="og:image" content="" />
 
 	<link rel="profile" href="https://gmpg.org/xfn/11">

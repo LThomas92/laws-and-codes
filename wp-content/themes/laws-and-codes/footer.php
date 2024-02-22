@@ -21,7 +21,8 @@
       <h3>Sign up for our newsletter. Stay tuned for any <span>updates, promotions, & discounts!</span></h3>
     
     <div class="footer-newsletter__form">
-    <?php echo do_shortcode('[mc4wp_form id=80]'); ?>
+      <?php $newsletterForm = get_field('newsletter_form', 'option'); ?>
+    <?php echo $newsletterForm; ?>
     </div>
 
     </div>
@@ -101,7 +102,8 @@ endif;
 </div>
   <div class="c-newsletter-popup__form">
     <div class="c-popup-modal__form">
-    <?php echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"] '); ?>
+    <?php $quoteForm = get_field('form', 'option'); ?>
+    <?php echo $quoteForm; ?>
     </div>
   </div>
 	</div>

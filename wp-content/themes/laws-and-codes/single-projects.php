@@ -34,7 +34,7 @@
         $link = get_sub_field('social_media_link'); 
     ?>
         <li class="c-single-project__social-media-icon">
-            <a href="<?php echo $link; ?>">
+            <a target="_blank" href="<?php echo $link; ?>">
                 <img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>">
             </a>
         </li>
@@ -71,25 +71,7 @@ endif; ?>
 endif; ?>
     </section>
 
-    <div class="c-single-project__fun-facts">
-        <?php 
-            $funFactTitle = get_field('fun_facts_title');
-        ?>
-        <h4 class="c-single-project__fun-facts-title"><?php echo $funFactTitle; ?></h4>
-        <div class="c-single-project__fun-facts-content">
-        <?php if( have_rows('fun_facts') ): ?>
-        <ul class="c-single-project__fun-facts">
-        <?php while( have_rows('fun_facts') ) : the_row();
-        $funFact = get_sub_field('fun_fact'); ?>
-            <li><?php echo $funFact; ?></li>
 
-    <?php endwhile; ?>
-    </ul>
-<?php 
-else :
-    // Do something...
-endif; ?>
-        </div>
     </div>
 
 
