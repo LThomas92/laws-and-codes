@@ -36,7 +36,10 @@
       <a href="<?php echo get_site_url(); ?>">
       <img class="site-footer__logo" src="<?php echo get_template_directory_uri(); ?>/img/laws-codes-logo.png"" alt="Laws & Codes logo">
       </a>
-      <p class="site-footer__desc">We transform visions into immersive online experiences, ensuring your brand stands out in the ever-evolving digital landscape.</p>
+      <p class="site-footer__desc">
+      <?php $footerTagline = get_field('footer_tagline', 'option'); ?>
+      <?php echo $footerTagline; ?>
+      </p>
       <?php if( have_rows('social_media_icons', 'option') ): ?>
 
    <ul class="site-footer__social-media-icons">
@@ -83,7 +86,7 @@ endif;
         $copyright = get_field('footer_copyright', 'option');
       ?>
       <p class="site-footer__copyright">
-        <?php echo $copyright; ?>.<span>All Rights Reserved</span>
+        <?php echo $copyright; ?>.<span> All Rights Reserved</span>
       </p>
     </div>
 	</footer><!-- #colophon -->

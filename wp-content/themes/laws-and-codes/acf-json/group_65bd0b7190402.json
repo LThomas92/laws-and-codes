@@ -20,26 +20,6 @@
             "endpoint": 0
         },
         {
-            "key": "field_65bd0b7193c2c",
-            "label": "Date",
-            "name": "date",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
             "key": "field_65bd29748fb74",
             "label": "Website Link",
             "name": "website_link",
@@ -210,5 +190,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1708636610
+    "modified": 1708722044
 }

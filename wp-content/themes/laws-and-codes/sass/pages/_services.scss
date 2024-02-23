@@ -170,6 +170,7 @@
       justify-content: space-between;
       flex-wrap: wrap;
       padding: 4rem;
+      @include container-margins;
       @media only screen and (max-width: $tablet_max) {
         flex-direction: column;
         flex-wrap: nowrap;
@@ -190,13 +191,13 @@
         margin-bottom: 1.2rem;
       }
       p {
-        color: $blue;
+        color: $black;
       }
     }
 
     //PROCESS SECTION 
     &__process-section {
-      padding: 3rem 2rem;
+      padding: 3rem 0rem;
       background-color: rgba($white, 0.2);
     }
     &__process-header {
