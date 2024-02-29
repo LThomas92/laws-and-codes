@@ -116,6 +116,21 @@ $(document).ready(function () {
     $('.c-popup-modal').removeClass('c-popup-modal__active');
   });
 
+  $(document).mouseup(function (e) {
+    var modal = $('#modal');
+    if (!modal.is(e.target) && modal.has(e.target).length === 0) {
+      $('.dark-bg').removeClass('show-dark-bg');
+      $('.c-popup-modal').removeClass('c-popup-modal__active');
+    }
+  });
+
+  $(document).keydown(function (e) {
+    if (e.key === "Escape") {
+      $('.dark-bg').removeClass('show-dark-bg');
+      $('.c-popup-modal').removeClass('c-popup-modal__active');
+    }
+  });
+
   //Pages - ABOUT 
 
   $('.c-about-page__image-slides').slick({

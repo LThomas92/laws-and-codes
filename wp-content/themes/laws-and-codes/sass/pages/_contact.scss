@@ -45,9 +45,9 @@
                 padding: 1.5rem 2rem;
             }
         }
-        .gfield_label, label {
+        .gfield_label, label, .gform-field-label {
             font-family: $poppins;
-            font-size: 1.2rem;
+            font-size: 0.9rem;
             font-weight: 400 !important;
             color: $white;
         }
@@ -60,17 +60,19 @@
             font-family: $archivo;
             margin-bottom: 0.8rem;
         }
-        .gform-field-label {
-            padding-left: 1.2rem;
-        }
         input[type="text"] {
+            font-family: $archivo !important;
             background-color: transparent;
             border: none;
-            outline: none;
+            outline: none !important;
             border-bottom: 0.8px solid $white;
             color: $white;
             display: block;
             margin-bottom: 1.5rem !important;
+            padding: 0;
+            &::focus {
+                outline: none !important;
+            }
         }
         textarea {
             font-family: $poppins;
@@ -96,6 +98,7 @@
         }
 
         .gform_button {
+            font-family: $poppins !important;
             background-color: $white !important;
             color: $blue !important;
             font-weight: 500 !important;

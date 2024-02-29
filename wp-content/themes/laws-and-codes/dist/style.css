@@ -93,6 +93,39 @@
       .c-popup-modal__form {
         padding-top: 2.5rem;
         padding-left: 2.5rem; } }
+    .c-popup-modal__form .gform-field-label {
+      font-family: "Poppins", sans-serif; }
+    .c-popup-modal__form input[type="text"] {
+      font-family: "Archivo Narrow", sans-serif !important;
+      display: block;
+      margin-bottom: 1.5rem !important;
+      padding-left: 0.3rem; }
+    .c-popup-modal__form textarea, .c-popup-modal__form input[type="email"] {
+      font-family: "Poppins", sans-serif; }
+    .c-popup-modal__form .gform_button {
+      font-family: "Poppins", sans-serif !important;
+      background-color: #070945 !important;
+      color: #fff !important;
+      font-weight: 500 !important; }
+    .c-popup-modal__form .gform_footer {
+      margin-top: 3.5rem !important; }
+    .c-popup-modal__form .gform_confirmation_message {
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      color: #070945;
+      padding: 8rem 2.5rem;
+      margin-top: 2rem;
+      position: relative; }
+      .c-popup-modal__form .gform_confirmation_message::before {
+        content: '';
+        background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4Ny42IDg3LjYiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6ICNlOGNjYjI7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgPC9kZWZzPgogIDxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTQzLjgsMEMxOS42LDAsMCwxOS42LDAsNDMuOHMxOS42LDQzLjgsNDMuOCw0My44LDQzLjgtMTkuNiw0My44LTQzLjhTNjgsMCw0My44LDBabTE2LDI5LjdjNC4xLS4xLDYuMiw0LjksMy4zLDcuOGwtMjEuMiwyMS4yYy0xLjMsMS4zLTMuNSwxLjMtNC44LDBsLTEwLjctMTAuOWMtNC40LTQuMywyLjEtMTAuOCw2LjQtNi40bDYsNmMuNCwuNCwxLjIsLjQsMS42LDBsMTYuNC0xNi40Yy43LS44LDEuOC0xLjMsMy0xLjNoMFoiLz4KPC9zdmc+);
+        background-size: 30px 30px;
+        width: 30px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        top: 25%;
+        left: 50%; }
   .c-popup-modal__title {
     font-family: "Sora", sans-serif;
     font-weight: 500;
@@ -596,19 +629,6 @@
       .our-services__service {
         margin-right: 0;
         margin-bottom: 2.5rem; } }
-    .our-services__service::after {
-      content: '';
-      position: absolute;
-      top: 30%;
-      right: 0;
-      width: 0.3px;
-      height: 65%;
-      background-color: rgba(255, 255, 255, 0.7); }
-      @media only screen and (max-width: 1024px) {
-        .our-services__service::after {
-          display: none; } }
-    .our-services__service:nth-child(3)::after {
-      display: none; }
   .our-services__service-icon {
     height: 2.2rem;
     margin-bottom: 1.2rem; }
@@ -1376,7 +1396,8 @@
       color: #949494; }
   .c-page-faqs__content {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: flex-start; }
     @media only screen and (max-width: 767px) {
       .c-page-faqs__content {
         flex-direction: column; } }
@@ -1494,9 +1515,9 @@
       @media only screen and (max-width: 1024px) {
         .c-page-contact-us__form form {
           padding: 1.5rem 2rem; } }
-    .c-page-contact-us__form .gfield_label, .c-page-contact-us__form label {
+    .c-page-contact-us__form .gfield_label, .c-page-contact-us__form label, .c-page-contact-us__form .gform-field-label {
       font-family: "Poppins", sans-serif;
-      font-size: 1.2rem;
+      font-size: 0.9rem;
       font-weight: 400 !important;
       color: #fff; }
     .c-page-contact-us__form .gfield_radio {
@@ -1506,16 +1527,18 @@
       text-transform: uppercase;
       font-family: "Archivo Narrow", sans-serif;
       margin-bottom: 0.8rem; }
-    .c-page-contact-us__form .gform-field-label {
-      padding-left: 1.2rem; }
     .c-page-contact-us__form input[type="text"] {
+      font-family: "Archivo Narrow", sans-serif !important;
       background-color: transparent;
       border: none;
-      outline: none;
+      outline: none !important;
       border-bottom: 0.8px solid #fff;
       color: #fff;
       display: block;
-      margin-bottom: 1.5rem !important; }
+      margin-bottom: 1.5rem !important;
+      padding: 0; }
+      .c-page-contact-us__form input[type="text"]::focus {
+        outline: none !important; }
     .c-page-contact-us__form textarea {
       font-family: "Poppins", sans-serif; }
     .c-page-contact-us__form .gform_drop_instructions, .c-page-contact-us__form .gform_fileupload_rules {
@@ -1534,6 +1557,7 @@
       display: inline-block;
       margin-top: 0.8rem; }
     .c-page-contact-us__form .gform_button {
+      font-family: "Poppins", sans-serif !important;
       background-color: #fff !important;
       color: #070945 !important;
       font-weight: 500 !important; }

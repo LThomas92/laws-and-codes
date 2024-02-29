@@ -155,23 +155,6 @@
           margin-right: 0;
           margin-bottom: 2.5rem;
         }
-        &::after {
-            content: '';
-            position: absolute;
-            top: 30%;
-            right: 0;
-            width: 0.3px;
-            height: 65%;
-            background-color: rgba($white, 0.7);
-            @media only screen and (max-width: $tablet_max) {
-              display: none;
-            }
-        }
-        &:nth-child(3) {
-            &::after {
-              display: none;
-            }
-          }
     }
     &__service-icon {
         height: 2.2rem;
