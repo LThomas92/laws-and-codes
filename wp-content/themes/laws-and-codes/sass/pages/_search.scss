@@ -12,6 +12,7 @@
         margin-bottom: 3.5rem;
         @media only screen and (max-width: $tablet_max) {
             flex-direction: column;
+            flex-wrap: nowrap;
           }
     }
     &__list-item {
@@ -52,5 +53,23 @@
     &__list-item-title {
         font-family: $poppins;
         font-weight: 400;
+    }
+    .no-results {
+        margin-bottom: 2.5rem;
+        .search-field {
+            margin: 1.5rem 0;
+            font-size: 1.5rem;
+            border-bottom: 1px solid $blue;
+            color: $blue;
+        }
+        .search-submit {
+            border: none;
+            outline: none;
+            background-color: $blue;
+            padding: 0.8rem 1rem;
+            color: $white;
+            font-family: $poppins;
+            border-radius: 2px;
+        }
     }
 }

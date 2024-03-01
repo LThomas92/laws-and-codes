@@ -92,17 +92,17 @@
           padding-left: 2.5rem;
       }
       .gform-field-label {
-        font-family: $poppins;
+        font-family: $poppins !important;
       }
 
       input[type="text"] {
         font-family: $archivo !important;
         display: block;
-        margin-bottom: 1.5rem !important;
+        margin-bottom: 0.5rem !important;
         padding-left: 0.3rem;
     }
     textarea, input[type="email"] {
-        font-family: $poppins;
+        font-family: $poppins !important;
     }
 
       .gform_button {
@@ -345,6 +345,16 @@
         margin-bottom: 1.2rem;
       }
     }
+  }
+  &__quote-btn {
+    background-color: $white;
+    font-family: $poppins;
+    color: $blue;
+    padding: 0.8rem 1rem;
+    display: inline-block;
+    margin-top: 2.5rem;
+    width: 100%;
+    text-align: center;
   }
 }
 

@@ -94,14 +94,14 @@
         padding-top: 2.5rem;
         padding-left: 2.5rem; } }
     .c-popup-modal__form .gform-field-label {
-      font-family: "Poppins", sans-serif; }
+      font-family: "Poppins", sans-serif !important; }
     .c-popup-modal__form input[type="text"] {
       font-family: "Archivo Narrow", sans-serif !important;
       display: block;
-      margin-bottom: 1.5rem !important;
+      margin-bottom: 0.5rem !important;
       padding-left: 0.3rem; }
     .c-popup-modal__form textarea, .c-popup-modal__form input[type="email"] {
-      font-family: "Poppins", sans-serif; }
+      font-family: "Poppins", sans-serif !important; }
     .c-popup-modal__form .gform_button {
       font-family: "Poppins", sans-serif !important;
       background-color: #070945 !important;
@@ -316,6 +316,15 @@
     color: #fff;
     display: block;
     margin-bottom: 1.2rem; }
+  .mobile-navigation__quote-btn {
+    background-color: #fff;
+    font-family: "Poppins", sans-serif;
+    color: #070945;
+    padding: 0.8rem 1rem;
+    display: inline-block;
+    margin-top: 2.5rem;
+    width: 100%;
+    text-align: center; }
 
 .current_page_item a {
   color: #E8CCB2 !important; }
@@ -340,6 +349,9 @@
   .site-footer__social-media-icons {
     display: flex;
     margin-top: 2rem; }
+    @media only screen and (max-width: 1024px) {
+      .site-footer__social-media-icons {
+        margin-bottom: 2rem; } }
   .site-footer__social-media {
     margin-right: 1.2rem; }
     .site-footer__social-media img {
@@ -1594,7 +1606,8 @@
   margin-bottom: 3.5rem; }
   @media only screen and (max-width: 1024px) {
     .c-search-results__list {
-      flex-direction: column; } }
+      flex-direction: column;
+      flex-wrap: nowrap; } }
 
 .c-search-results__list-item {
   flex-basis: calc((100% / 3) - 1rem); }
@@ -1629,6 +1642,22 @@
 .c-search-results__list-item-title {
   font-family: "Poppins", sans-serif;
   font-weight: 400; }
+
+.c-search-results .no-results {
+  margin-bottom: 2.5rem; }
+  .c-search-results .no-results .search-field {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #070945;
+    color: #070945; }
+  .c-search-results .no-results .search-submit {
+    border: none;
+    outline: none;
+    background-color: #070945;
+    padding: 0.8rem 1rem;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    border-radius: 2px; }
 
 .error-404 {
   width: calc(100vw - calc(16px * 2));

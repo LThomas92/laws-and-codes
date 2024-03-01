@@ -97,6 +97,12 @@
 				)
 			);
 			?>
+			<?php 
+				$mobileQuoteLink = get_field('quote_link', 'option');
+			?>
+			
+				<a class="mobile-navigation__quote-btn" href="<?php echo $mobileQuoteLink['url']; ?>">Get Quote</a>
+
 		</nav><!-- #site-navigation -->
 		</div>
   </div>
