@@ -1748,6 +1748,21 @@
       .c-page-privacy-policy__content {
         margin-top: 4rem; } }
 
+.c-page-thank-you__title {
+  margin-top: 4rem; }
+
+.c-page-thank-you__content {
+  width: calc(100vw - calc(16px * 2));
+  max-width: 959px;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+  @media (min-width: 1440px) {
+    .c-page-thank-you__content {
+      max-width: 1200px; } }
+  @media (max-width: 767px) {
+    .c-page-thank-you__content {
+      width: calc(100vw - calc(16px * 2)); } }
+
 .c-single-project {
   width: calc(100vw - calc(16px * 2));
   max-width: 959px;

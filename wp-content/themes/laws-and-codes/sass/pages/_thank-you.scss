@@ -1,0 +1,8 @@
+.c-page-thank-you {
+  &__title {
+    margin-top: 4rem;
+  }
+  &__content {
+    @include container-margins;
+  }
+}
